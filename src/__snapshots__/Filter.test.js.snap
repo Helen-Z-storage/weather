@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Filter component Matches the snapshot 1`] = `
+<td
+  id="filter_space"
+>
+  <input
+    id="name_filter"
+    onKeyUp={[Function]}
+    placeholder="Search by name"
+    type="text"
+  />
+  <input
+    id="tag_filter"
+    onKeyUp={[Function]}
+    placeholder="Search by tag"
+    type="text"
+  />
+</td>
+`;

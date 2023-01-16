@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing StudentList component Matches the snapshot 1`] = `
+<table
+  id="context_box"
+>
+  <tbody>
+    <tr>
+      <td
+        id="filter_space"
+      >
+        <input
+          id="name_filter"
+          onKeyUp={[Function]}
+          placeholder="Search by name"
+          type="text"
+        />
+        <input
+          id="tag_filter"
+          onKeyUp={[Function]}
+          placeholder="Search by tag"
+          type="text"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul
+          id="lst_table"
+        >
+          <li
+            className="single_student"
+            style={Object {}}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      alt="INGABERG ORTO profile"
+                      src="https://storage.googleapis.com/hatchways-app.appspot.com/assessments/data/frontend/images/voluptasdictablanditiis.jpg"
+                    />
+                  </td>
+                  <td>
+                    <ul
+                      className="data_space"
+                    >
+                      <li>
+                        <div
+                          className="stu_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          INGABERG ORTO
+                        </div>
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Email: iorton0@imdb.com
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Company: Yadel
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Skill: Oracle
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Average: 88.875%
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td>
+                    <ul
+                      className="grade_lst"
+                    >
+                      <li>
+                        <button
+                          className="expand"
+                          onClick={[Function]}
+                        >
+                          +
+                        </button>
+                      </li>
+                      <li />
+                    </ul>
+                    <ul>
+                      <li
+                        className="tags"
+                      >
+                        <button
+                          onClick={[Function]}
+                        >
+                          a
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          ver
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          tise
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          339%?
+                        </button>
+                      </li>
+                      <li>
+                        <input
+                          onKeyUp={[Function]}
+                          placeholder="Add a tag"
+                          type="text"
+                        />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li
+            className="single_student"
+            style={Object {}}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      alt="CLARKE BOARDS profile"
+                      src="https://storage.googleapis.com/hatchways-app.appspot.com/assessments/data/frontend/images/voluptasautreprehenderit.jpg"
+                    />
+                  </td>
+                  <td>
+                    <ul
+                      className="data_space"
+                    >
+                      <li>
+                        <div
+                          className="stu_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          CLARKE BOARDS
+                        </div>
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Email: cboards1@weibo.com
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Company: Avamm
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Skill: Sports
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Average: 87.25%
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td>
+                    <ul
+                      className="grade_lst"
+                    >
+                      <li>
+                        <button
+                          className="expand"
+                          onClick={[Function]}
+                        >
+                          +
+                        </button>
+                      </li>
+                      <li />
+                    </ul>
+                    <ul>
+                      <li
+                        className="tags"
+                      >
+                        <button
+                          onClick={[Function]}
+                        >
+                          %
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          33
+                        </button>
+                      </li>
+                      <li>
+                        <input
+                          onKeyUp={[Function]}
+                          placeholder="Add a tag"
+                          type="text"
+                        />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li
+            className="single_student"
+            style={Object {}}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      alt="LUCY ROMANET profile"
+                      src="https://storage.googleapis.com/hatchways-app.appspot.com/assessments/data/frontend/images/aspernaturnonsapiente.jpg"
+                    />
+                  </td>
+                  <td>
+                    <ul
+                      className="data_space"
+                    >
+                      <li>
+                        <div
+                          className="stu_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          LUCY ROMANET
+                        </div>
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Email: lromanet2@wired.com
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Company: Skalith
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Skill: Employee Handbooks
+                      </li>
+                      <li
+                        className="stu_data"
+                      >
+                        Average: 85.75%
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td>
+                    <ul
+                      className="grade_lst"
+                    >
+                      <li>
+                        <button
+                          className="expand"
+                          onClick={[Function]}
+                        >
+                          +
+                        </button>
+                      </li>
+                      <li />
+                    </ul>
+                    <ul>
+                      <li
+                        className="tags"
+                      >
+                        <button
+                          onClick={[Function]}
+                        >
+                          Ment
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          ad
+                        </button>
+                      </li>
+                      <li>
+                        <input
+                          onKeyUp={[Function]}
+                          placeholder="Add a tag"
+                          type="text"
+                        />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

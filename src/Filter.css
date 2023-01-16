@@ -1,0 +1,11 @@
+
+#filter_space {
+    height: 1em;
+    padding: 0px 5px;
+    margin: 0;
+  }
+  
+  #name_filter, #tag_filter {
+    width: 100%; /* Full-width */
+  }
+  

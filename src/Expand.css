@@ -1,0 +1,19 @@
+
+.grade_lst {
+    margin: 0.5em 0px;
+  }
+
+.expand {
+  position: absolute;
+  background-color: white;
+  color: #A0A0A0;
+  font-size: 4em;
+  border: hidden;
+  float: right;
+  top: 0px;
+  right: 0px;
+}
+
+.expand:focus {
+  color: black;
+}
