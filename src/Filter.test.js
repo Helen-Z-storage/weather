@@ -10,7 +10,7 @@ import Filter from './Filter';
 // required prop data of create component
 const empty_filter = "{enter}";
 const empty_event_num = 1;
-const filt_name = "ING";
+const filt_city = "ING";
 const filt_tag = "INS";
 const handleFilter = jest.fn();
 const handleFilter1 = jest.fn();
@@ -27,7 +27,7 @@ describe('testing Filter component', () => {
         // expecting output
         expect(expandData.toJSON()).toMatchSnapshot();
     });
-    test("shows name_filter textfield working", () => {
+    test("shows city_filter textfield working", () => {
         // render component
         render(
             <table>
@@ -40,7 +40,7 @@ describe('testing Filter component', () => {
         );
 
         // expecting output
-        const textfield = screen.getByPlaceholderText("Search by name");
+        const textfield = screen.getByPlaceholderText("Search by city");
 
         // filter by press enter only
         userEvent.type(textfield, empty_filter);
@@ -50,11 +50,11 @@ describe('testing Filter component', () => {
         expect(handleFilter1.mock.calls[0][0].nativeEvent.keyCode).toEqual(13);
 
         // filter by press word keys
-        userEvent.type(textfield, filt_name);
-        const sum = filt_name.length + empty_event_num
+        userEvent.type(textfield, filt_city);
+        const sum = filt_city.length + empty_event_num
         expect(handleFilter1).toBeCalledTimes(sum);
         expect(handleFilter1.mock.calls.length).toEqual(sum);
-        expect(handleFilter1.mock.calls[sum - 1][0].target.value).toEqual(filt_name);
+        expect(handleFilter1.mock.calls[sum - 1][0].target.value).toEqual(filt_city);
 
         let keyCodes = [];
         for (var i = 1; i < sum; i++) {

@@ -1,0 +1,10 @@
+
+.single_city {
+  border-bottom: 1px solid #EFEFEF;
+  position: relative;
+}
+
+.single_city li{
+  padding-left: 20px;
+  margin: 0px;
+}

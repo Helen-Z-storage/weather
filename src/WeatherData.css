@@ -1,0 +1,23 @@
+
+.data_space {
+    width: 100%; /* Full-width */
+}
+
+img {
+  width: 7em;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px solid #DCDCDC;
+}
+
+.city_name {
+    font-size: 2em;
+    font-weight: bolder;
+    float: left;
+    padding: 0.3em 0em;
+  }
+  
+.city_data {
+    padding-top: 5px;
+  }
+  

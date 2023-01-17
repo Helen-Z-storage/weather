@@ -1,39 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import StudentList from './StudentList';
 import reportWebVitals from './reportWebVitals';
-
-// global variables
-let url = "https://api.hatchways.io/assessment/students";
-let storage = window.localStorage;
-// use this tag_spliter to split tags
-// tag which insert same as tag_spliter and "" tag is not included
-let tag_spliter = " ";
-
-// fetch by GET
-// since it store in localStorage, data will not lost after we close browser
-if (storage.length === 0) {
-    fetch(url)
-    .then(response => response.json())
-    .then(fetched_data => {
-
-        // store every single student from fetched_data into local storage
-        // useing index 0 to storage.length to find them
-        // adding "tags" to store tags by string
-        fetched_data.students.map((stu, i) => {
-            stu['tags'] = tag_spliter;
-            storage.setItem(i, JSON.stringify(stu));
-            // DIFF
-            return i;
-        });
-    })
-    .catch(error => console.error('Error:', error));
-}
+import App from './App';
 
 ReactDOM.render(
-    //<StudentList store_length={storage.length}/>,
-    <StudentList store_length={storage.length}/>,
+    <App></App>,
     document.getElementById('root')
 );
 
