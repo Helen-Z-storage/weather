@@ -5,7 +5,7 @@
     margin: 0;
   }
   
-  #name_filter, #tag_filter {
+  #cityFilter, #countryFilter, #tagFilter {
     width: 100%; /* Full-width */
   }
   

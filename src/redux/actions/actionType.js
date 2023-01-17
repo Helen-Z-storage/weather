@@ -4,6 +4,7 @@ export const actionType = {
         setCityFilter:        "UI_SETCITYFILTER",
         setCountryFilter:     "UI_SETCOUNTRYFILTER",
         setTagFilter:         "UI_SETTAGFILTER",
+        setGroupExpand:       "UI_SETGROUPEXPAND",
     },
     weather: {
         weatherLoadPending:  `WEATHER_LOAD${ActionType.Pending}`,

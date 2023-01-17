@@ -20,3 +20,10 @@ export const setTagFilter = (tagFilter) => {
         payload: tagFilter
     }
 }
+
+export const setGroupExpand = (groupExpand) => {
+    return {
+        type: actionType.ui.setGroupExpand,
+        payload: groupExpand
+    }
+}

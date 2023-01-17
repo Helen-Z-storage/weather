@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 let config = (headers) => ({
-    baseURL: "http://localhost:8080/api/",
+    baseURL: "https://api.openweathermap.org/data/2.5/forecast",
     headers: headers,
     responseType: 'json'
 });

@@ -1,5 +1,6 @@
 import { actionType } from "../actions/actionType";
 import { fromJS } from "immutable";
+import capitals from "../../data/capital.json";
 
 const initialState = () => {
     return fromJS(
@@ -7,6 +8,7 @@ const initialState = () => {
             cityFilter:        "",
             countryFilter:     "",
             tagFilter:         "",
+            groupExpand:       new Array(capitals.length).fill(false),
         }
     )
 }
@@ -28,4 +30,8 @@ reducer.prototype[actionType.ui.setCountryFilter] = (state, action) => {
 
 reducer.prototype[actionType.ui.setTagFilter] = (state, action) => {
     return state.set("tagFilter", action.payload);
+}
+
+reducer.prototype[actionType.ui.setGroupExpand] = (state, action) => {
+    return state.set("groupExpand", action.payload);
 }
