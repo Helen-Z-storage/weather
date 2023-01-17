@@ -4,7 +4,6 @@ import capitals from "../../data/capital.json";
 import { round2, sumList } from "../../utilities/helpers";
 
 const API_key = "87391d7ad955bd47f528c419e1b7519d";
-const baseAPI = "https://api.openweathermap.org/data/2.5/forecast";
 const icon_img = (icon) => `https://openweathermap.org/img/wn/${icon}@2x.png`;
 const tag_spliter = " ";
 
@@ -24,11 +23,12 @@ export const pageLoadWeather = () => {
     return (dispatch) => {
         dispatch({type: actionType.weather.weatherLoadPending, payload: null});
         // change url to fetch data
-        const weathers = capitals.map((capital, i) => {
-            //url = `https://api.openweathermap.org/data/2.5/forecast?lat=${}&lon=${capital.lon}&units=metric&cnt=8&appid=${API_key}`
-            post(baseAPI, { lat: capital.lat, lon: capital.lon, units: "metric", cnt: 8, appid: API_key })
+        console.log(capitals.capitals);
+        const weathers = capitals.capitals.map((capital, i) => {
+            const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${capital.lat}&lon=${capital.lon}&units=metric&cnt=8&appid=${API_key}`
+            post(url)
             .then(res => {
-                if (res.cod !== 200) {
+                if (res.cod !== "200") {
                     dispatch({type: actionType.weather.weatherLoadRejected, payload: `ErrorCode ${res.cod}: ${res.message}`})
                 } else {            
                     const weather_obj = {

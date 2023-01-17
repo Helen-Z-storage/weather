@@ -4,7 +4,8 @@ import axios from 'axios';
 let config = (headers) => ({
     baseURL: "https://api.openweathermap.org/data/2.5/forecast",
     headers: headers,
-    responseType: 'json'
+    responseType: 'json',
+    "Access-Control-Allow-Origin": "*"
 });
 
 // response interceptor
