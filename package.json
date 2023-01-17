@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "https://pkg.csb.dev/reduxjs/redux-toolkit/commit/27edeffb/@reduxjs/toolkit",
+    "@rtk-query/graphql-request-base-query": "https://pkg.csb.dev/reduxjs/redux-toolkit/commit/27edeffb/@rtk-query/graphql-request-base-query",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

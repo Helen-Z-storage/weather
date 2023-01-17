@@ -6,12 +6,40 @@ import Tag from './Tag';
 
 import { connect } from "react-redux";
 
+
+const tag_spliter = " ";
+const defaultCity = {
+    id: -1,
+    country: "",
+    city: "",
+    lat: 0.0,
+    lon: 0.0,
+    tags: tag_spliter,
+    icon: "",
+    avg_forecast: {
+        timestamp: "",
+        temp: 0.00,
+        feels_like: 0.00,
+        temp_min: 0.00,
+        temp_max: 0.00,
+        icon: ""
+    },
+    detail_forecast: new Array(8).fill({
+        timestamp: "", 
+        temp: 0.00,
+        feels_like: 0.00,
+        temp_min: 0.00,
+        temp_max: 0.00,
+        icon: "",
+    })
+};
+
 function Weather(props) {
     const {cityID} = props;
     const cityFilter = props.ui.get("cityFilter");
     const countryFilter = props.ui.get("countryFilter");
     const tagFilter = props.ui.get("tagFilter");
-    const city = props.weather.getIn("weather.captials".split("."))[cityID];
+    const city = props.weather.getIn("weather.captials".split("."))[cityID] || defaultCity;
 
     // check whether current city is not filter by city_filter or tag_filter
     const remove_by_city = city.city.indexOf(cityFilter) === -1;

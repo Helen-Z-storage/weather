@@ -6,10 +6,36 @@ import * as uiActions from "../redux/actions/uiActions";
 import * as pageActions from "../redux/actions/pageActions";
 
 const tag_spliter = " ";
+const defaultCity = {
+    id: -1,
+    country: "",
+    city: "",
+    lat: 0.0,
+    lon: 0.0,
+    tags: tag_spliter,
+    icon: "",
+    avg_forecast: {
+        timestamp: "",
+        temp: 0.00,
+        feels_like: 0.00,
+        temp_min: 0.00,
+        temp_max: 0.00,
+        icon: ""
+    },
+    detail_forecast: new Array(8).fill({
+        timestamp: "", 
+        temp: 0.00,
+        feels_like: 0.00,
+        temp_min: 0.00,
+        temp_max: 0.00,
+        icon: "",
+    })
+};
 
 function Tag(props) {
     const {cityID} = props;
-    let capitals = props.weather.getIn("login.captials".split("."));
+    let capitals = props.weather.getIn("weather.captials".split("."));
+    const city = capitals[cityID] || defaultCity;
 
     const handleFilter = ({ target }) => {
       props.dispatch(uiActions.setTagFilter(target.innerHTML.toUpperCase()));
@@ -33,8 +59,8 @@ function Tag(props) {
       else if (nativeEvent.keyCode === 13) {
           var tag = target.value + tag_spliter;
           // Add new tag if tag is not store in current city
-          if (capitals[cityID].tags.indexOf(tag_spliter + tag) === -1) {
-            capitals[cityID].tags += (tag);
+          if (city.tags.indexOf(tag_spliter + tag) === -1) {
+            city.tags += (tag);
           } else {
               // handle case of duplicate tag
               alert(`No duplicate tag should been add`);
@@ -51,7 +77,7 @@ function Tag(props) {
     };
 
     // split string tag into a list of valid tags, and remove empty tag
-    var tag_lst = capitals[cityID].tags.split(tag_spliter).filter(tag => tag !== "")
+    var tag_lst = city.tags.split(tag_spliter).filter(tag => tag !== "")
                   .map((tag, i) => <button key={i} onClick={event => handleFilter(event)}>{tag}</button>);
   
     return (
