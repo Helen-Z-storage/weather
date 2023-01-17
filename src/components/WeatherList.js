@@ -1,5 +1,5 @@
 import React from 'react';
-import './WeatherList.css';
+import '../css/WeatherList.css';
 import Weather from './Weather';
 import Filter from './Filter';
 import { v4 as uuidv4 } from 'uuid';

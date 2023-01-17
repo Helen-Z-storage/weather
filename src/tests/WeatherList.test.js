@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect' // expect function
 import userEvent from '@testing-library/user-event'; 
 
-import StudentList from './StudentList';
+import WeatherList from '../components/WeatherList';
 
 // required prop data of create component
 const tag_spliter = " ";
@@ -86,11 +86,11 @@ const non_name_length = "profile".length + 1;
 const test_nums = city_datas.map(
     city => city.grades.length);
 
-describe('testing StudentList component', () => {
+describe('testing WeatherList component', () => {
     test("Matches the snapshot", () => {
         // create component
         const city = create(
-            <StudentList store_length={store_length}/>
+            <WeatherList store_length={store_length}/>
         );
 
         // expecting output
@@ -101,7 +101,7 @@ describe('testing StudentList component', () => {
     test("test name filters", () => {
         // render component
         render(
-            <StudentList store_length={store_length}/>
+            <WeatherList store_length={store_length}/>
         );
 
         // expecting output
@@ -140,7 +140,7 @@ describe('testing StudentList component', () => {
     test("test tag filters", () => {
         // render component
         render(
-            <StudentList store_length={store_length}/>
+            <WeatherList store_length={store_length}/>
         );
 
         // expecting output
@@ -179,7 +179,7 @@ describe('testing StudentList component', () => {
     test("test tag button", () => {
         // render component
         render(
-            <StudentList store_length={store_length}/>
+            <WeatherList store_length={store_length}/>
         );
 
         // expecting output
@@ -207,7 +207,7 @@ describe('testing StudentList component', () => {
     test("test expand button", () => {
         // render component
         render(
-            <StudentList store_length={store_length}/>
+            <WeatherList store_length={store_length}/>
         );
 
         // expecting output

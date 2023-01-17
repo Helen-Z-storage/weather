@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect' // expect function
 import userEvent from '@testing-library/user-event'; 
 
-import Student from './Student';
+import Weather from '../components/Weather';
 
 // required prop data of create component
 const tag_spliter = " ";
@@ -44,7 +44,7 @@ const city_data = {
 }
 storage.setItem(city_id, JSON.stringify(city_data));
 
-describe('testing Student component with data', () => {
+describe('testing Weather component with data', () => {
     // mock window.alert
     beforeEach(() => {
         window.alert = jest.fn();
@@ -57,7 +57,7 @@ describe('testing Student component with data', () => {
     test("Matches the snapshot: shows expanded Expand component", () => {
         // create component
         const city = create(
-            <Student city_id={city_id} expand={expandT}
+            <Weather city_id={city_id} expand={expandT}
                      name_filter={name_filter} tag_filter={tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>
@@ -70,7 +70,7 @@ describe('testing Student component with data', () => {
     test("Matches the snapshot: shows non-expanded Expand component", () => {
         // create component
         const city = create(
-            <Student city_id={city_id} expand={expandF}
+            <Weather city_id={city_id} expand={expandF}
                      name_filter={name_filter} tag_filter={tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>
@@ -84,7 +84,7 @@ describe('testing Student component with data', () => {
     test("shows filt name displayed city", () => {
         // render component
         render(
-            <Student city_id={city_id} expand={expandF}
+            <Weather city_id={city_id} expand={expandF}
                      name_filter={filt_name_filter} tag_filter={tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>
@@ -97,7 +97,7 @@ describe('testing Student component with data', () => {
     test("shows unfilt name displayed city", () => {
         // render component
         render(
-            <Student city_id={city_id} expand={expandF}
+            <Weather city_id={city_id} expand={expandF}
                      name_filter={unfilt_name_filter} tag_filter={tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>
@@ -111,7 +111,7 @@ describe('testing Student component with data', () => {
     test("shows filt tag displayed city", () => {
         // render component
         render(
-            <Student city_id={city_id} expand={expandF}
+            <Weather city_id={city_id} expand={expandF}
                      name_filter={name_filter} tag_filter={filt_tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>
@@ -125,7 +125,7 @@ describe('testing Student component with data', () => {
     test("shows unfilt tag displayed city", () => {
         // render component
         render(
-            <Student city_id={city_id} expand={expandF}
+            <Weather city_id={city_id} expand={expandF}
                      name_filter={name_filter} tag_filter={unfilt_tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>
@@ -140,7 +140,7 @@ describe('testing Student component with data', () => {
     test("tested custom hook useLocalStorage(): adding tag", () => {
         // render component
         render(
-            <Student city_id={city_id} expand={expandF}
+            <Weather city_id={city_id} expand={expandF}
                      name_filter={name_filter} tag_filter={tag_filter}
                      handleExpand={exp_id => handleExpand(exp_id)}
                      handleFilter={(e) => handleFilter(e)}/>

@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect' // expect function
 import userEvent from '@testing-library/user-event'; 
 
-import Expand from './Expand';
+import Expand from '../components/Expand';
 
 // required prop data of create component
 const stu_id = 3;

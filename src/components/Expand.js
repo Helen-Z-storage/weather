@@ -1,5 +1,5 @@
 import React from 'react';
-import './Expand.css';
+import '../css/Expand.css';
 
 function Expand(props) {
     const {stu_id, grades, expand, handleExpand} = props;

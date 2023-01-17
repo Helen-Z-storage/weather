@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect' // expect function
 import userEvent from '@testing-library/user-event'; 
 
-import Filter from './Filter';
+import Filter from '../components/Filter';
 
 // required prop data of create component
 const empty_filter = "{enter}";

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Tag.css';
+import '../css/Tag.css';
 const tag_spliter = " ";
 
 function Tag(props) {

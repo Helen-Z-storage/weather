@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherList from './WeatherList';
-import country_lst from "./data/country-list.json";
+import country_lst from "../data/country-list.json";
 
 // global variables
 let API_key = "87391d7ad955bd47f528c419e1b7519d"

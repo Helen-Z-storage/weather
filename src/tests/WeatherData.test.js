@@ -3,7 +3,7 @@ import { create } from "react-test-renderer";
 
 import '@testing-library/jest-dom/extend-expect' // expect function
 
-import StudentData from './StudentData';
+import WeatherData from '../components/WeatherData';
 
 // required prop data of create component
 const city = {
@@ -24,12 +24,12 @@ const avg = city.grades.map(grade => parseInt(grade, 10))
                             .reduce((a, b) => a + b, 0)
                             / city.grades.length;
 
-describe('testing StudentData component', () => {
+describe('testing WeatherData component', () => {
     // snampshot testing, for non-state component only
     test("Matches the snapshot", () => {
         // create component
         const cityData = create(
-            <StudentData city={city} name={name} avg={avg}/>
+            <WeatherData city={city} name={name} avg={avg}/>
         );
 
         // expecting output

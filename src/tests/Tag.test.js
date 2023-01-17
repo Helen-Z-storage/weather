@@ -5,7 +5,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect' // expect function
 import userEvent from '@testing-library/user-event'; 
 
-import Tag from './Tag';
+import Tag from '../components/Tag';
 
 // required prop data of create component
 const tags = " ad ver tise Ment 339%? ";
