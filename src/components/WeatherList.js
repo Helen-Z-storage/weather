@@ -4,6 +4,10 @@ import Weather from './Weather';
 import Filter from './Filter';
 import { v4 as uuidv4 } from 'uuid';
 
+import { connect } from "react-redux";
+import * as uiActions from "./redux/actions/uiActions";
+import * as pageActions from "./redux/actions/pageActions";
+
 class WeatherList extends React.Component{
     constructor(props){
         super(props);
@@ -77,4 +81,10 @@ class WeatherList extends React.Component{
   }
   
 
-export default WeatherList;
+export default connect (
+    (state) => {
+      return {
+        ui: state.ui,
+        posts: state.posts
+      }
+    })(WeatherList);

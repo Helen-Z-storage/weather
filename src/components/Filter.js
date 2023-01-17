@@ -1,6 +1,10 @@
 import React from 'react';
 import '../css/Filter.css';
 
+import { connect } from "react-redux";
+import * as uiActions from "./redux/actions/uiActions";
+import * as pageActions from "./redux/actions/pageActions";
+
 function Filter(props) {
     const {handleFilter} = props;
   
@@ -14,4 +18,10 @@ function Filter(props) {
     );
 }
 
-export default Filter;
+export default connect (
+    (state) => {
+      return {
+        ui: state.ui,
+        posts: state.posts
+      }
+    })(Filter);

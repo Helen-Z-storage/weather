@@ -4,6 +4,10 @@ import WeatherData from './WeatherData';
 import Expand from './Expand';
 import Tag from './Tag';
 
+import { connect } from "react-redux";
+import * as uiActions from "./redux/actions/uiActions";
+import * as pageActions from "./redux/actions/pageActions";
+
 let storage = window.localStorage;
 let tag_spliter = " ";
 
@@ -120,5 +124,11 @@ function Weather(props) {
     );
 }
 
-export default Weather;
+export default connect (
+    (state) => {
+      return {
+        ui: state.ui,
+        posts: state.posts
+      }
+    })(Weather);
 

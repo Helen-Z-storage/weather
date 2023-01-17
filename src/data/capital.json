@@ -1,1668 +1,1670 @@
-[
-    {
-        "country": "Abkhazia",
-        "city": "Sukhumi",
-        "country_code": "GE",
-        "lat": 43.0033629,
-        "lon": 41.0192741
-    },
-    {
-        "country": "Afghanistan",
-        "city": "Kabul",
-        "country_code": "AF",
-        "lat": 34.5260109,
-        "lon": 69.1776838
-    },
-    {
-        "country": "Albania",
-        "city": "Tirana",
-        "country_code": "AL",
-        "lat": 41.3305141,
-        "lon": 19.825562857582966
-    },
-    {
-        "country": "Algeria",
-        "city": "Algiers",
-        "country_code": "DZ",
-        "lat": 36.7753606,
-        "lon": 3.0601882
-    },
-    {
-        "country": "American Samoa",
-        "city": "Pago Pago",
-        "country_code": "AS",
-        "lat": -14.275632,
-        "lon": -170.702042
-    },
-    {
-        "country": "Andorra",
-        "city": "Andorra la Vella",
-        "country_code": "AD",
-        "lat": 42.506317,
-        "lon": 1.521835
-    },
-    {
-        "country": "Angola",
-        "city": "Luanda",
-        "country_code": "AO",
-        "lat": -8.8272699,
-        "lon": 13.2439512
-    },
-    {
-        "country": "Anguilla",
-        "city": "The Valley",
-        "country_code": "AI",
-        "lat": -8.8272699,
-        "lon": 13.2439512
-    },
-    {
-        "country": "Antigua and Barbuda",
-        "city": "St. John's",
-        "country_code": "AG",
-        "lat": 18.21704,
-        "lon": -63.05783
-    },
-    {
-        "country": "Argentina",
-        "city": "Buenos Aires",
-        "country_code": "AR",
-        "lat": -34.603722,
-        "lon": -58.381592
-    },
-    {
-        "country": "Armenia",
-        "city": "Yerevan",
-        "country_code": "AM",
-        "lat": 40.1776245,
-        "lon": 44.5126174
-    },
-    {
-        "country": "Aruba",
-        "city": "Oranjestad",
-        "country_code": "AW",
-        "lat": 17.48268,
-        "lon": -62.98324
-    },
-    {
-        "country": "Ascension Island",
-        "city": "Georgetown",
-        "country_code": "SH",
-        "lat": -7.9289722,
-        "lon": -14.4133993
-    },
-    {
-        "country": "Australia",
-        "city": "Canberra",
-        "country_code": "AU",
-        "lat": -35.2975906,
-        "lon": 149.1012676
-    },
-    {
-        "country": "Austria",
-        "city": "Vienna",
-        "country_code": "AT",
-        "lat": 48.2083537,
-        "lon": 16.3725042
-    },
-    {
-        "country": "Azerbaijan",
-        "city": "Baku",
-        "country_code": "AZ",
-        "lat": 40.3755885,
-        "lon": 49.8328009
-    },
-    {
-        "country": "Bahamas",
-        "city": "Nassau",
-        "country_code": "BS",
-        "lat": 25.0783456,
-        "lon": -77.3383331
-    },
-    {
-        "country": "Bahrain",
-        "city": "Manama",
-        "country_code": "BH",
-        "lat": 26.2235041,
-        "lon": 50.5822436
-    },
-    {
-        "country": "Bangladesh",
-        "city": "Dhaka",
-        "country_code": "BD",
-        "lat": 23.7644025,
-        "lon": 90.389015
-    },
-    {
-        "country": "Barbados",
-        "city": "Bridgetown",
-        "country_code": "BB",
-        "lat": 13.0977832,
-        "lon": -59.6184184
-    },
-    {
-        "country": "Belarus",
-        "city": "Minsk",
-        "country_code": "BY",
-        "lat": 53.9024716,
-        "lon": 27.5618225
-    },
-    {
-        "country": "Belgium",
-        "city": "Brussels",
-        "country_code": "BE",
-        "lat": 50.8465573,
-        "lon": 4.351697
-    },
-    {
-        "country": "Belize",
-        "city": "Belmopan",
-        "country_code": "BZ",
-        "lat": 17.250199,
-        "lon": -88.770018
-    },
-    {
-        "country": "Benin",
-        "city": "Porto_Novo",
-        "country_code": "BJ",
-        "lat": 6.4990718,
-        "lon": 2.6253361
-    },
-    {
-        "country": "Bermuda",
-        "city": "Hamilton",
-        "country_code": "BM",
-        "lat": 32.2956076,
-        "lon": -64.7827048
-    },
-    {
-        "country": "Bhutan",
-        "city": "Thimphu",
-        "country_code": "BT",
-        "lat": 27.4713546,
-        "lon": 89.6336729
-    },
-    {
-        "country": "Bolivia",
-        "city": "Sucre",
-        "country_code": "BO",
-        "lat": -19.0477251,
-        "lon": -65.2594306
-    },
-    {
-        "country": "Bolivia",
-        "city": "La Paz",
-        "country_code": "BO",
-        "lat": -16.489689,
-        "lon": -68.119293
-    },
-    {
-        "country": "Bosnia and Herzegovina",
-        "city": "Sarajevo",
-        "country_code": "BA",
-        "lat": 43.8519774,
-        "lon": 18.3866868
-    },
-    {
-        "country": "Botswana",
-        "city": "Gaborone",
-        "country_code": "BW",
-        "lat": -24.6581357,
-        "lon": 25.9088474
-    },
-    {
-        "country": "Brazil",
-        "city": "Brasília",
-        "country_code": "BR",
-        "lat": -15.790669,
-        "lon": -47.892967
-    },
-    {
-        "country": "British Virgin Islands",
-        "city": "Road Town",
-        "country_code": "VG",
-        "lat": 18.4286115,
-        "lon": -64.6184657
-    },
-    {
-        "country": "Brunei",
-        "city": "Bandar Seri Begawan",
-        "country_code": "BN",
-        "lat": 4.89035,
-        "lon": 114.94006
-    },
-    {
-        "country": "Bulgaria",
-        "city": "Sofia",
-        "country_code": "BG",
-        "lat": 42.6977028,
-        "lon": 23.3217359
-    },
-    {
-        "country": "Burkina Faso",
-        "city": "Ouagadougou",
-        "country_code": "BF",
-        "lat": 12.3681873,
-        "lon": -1.5270944
-    },
-    {
-        "country": "Burundi",
-        "city": "Bujumbura",
-        "country_code": "BI",
-        "lat": -3.3638125,
-        "lon": 29.3675028
-    },
-    {
-        "country": "Cambodia",
-        "city": "Phnom Penh",
-        "country_code": "KH",
-        "lat": 11.5448729,
-        "lon": 104.8921668
-    },
-    {
-        "country": "Cameroon",
-        "city": "Yaoundé",
-        "country_code": "CM",
-        "lat": 3.866667,
-        "lon": 11.516667
-    },
-    {
-        "country": "Canada",
-        "city": "Ottawa",
-        "country_code": "CA",
-        "lat": 45.4208777,
-        "lon": -75.6901106
-    },
-    {
-        "country": "Cape Verde",
-        "city": "Praia",
-        "country_code": "CV",
-        "lat": 14.9162811,
-        "lon": -23.5095095
-    },
-    {
-        "country": "Cayman Islands",
-        "city": "George Town",
-        "country_code": "KY",
-        "lat": 19.292997,
-        "lon": -81.366806
-    },
-    {
-        "country": "Central African Republic",
-        "city": "Bangui",
-        "country_code": "CF",
-        "lat": 4.3907153,
-        "lon": 18.5509126
-    },
-    {
-        "country": "Chad",
-        "city": "N'Djamena",
-        "country_code": "TD",
-        "lat": 12.1191543,
-        "lon": 15.0502758
-    },
-    {
-        "country": "Chile",
-        "city": "Santiago",
-        "country_code": "CL",
-        "lat": -33.4377756,
-        "lon": -70.6504502
-    },
-    {
-        "country": "China",
-        "city": "Beijing",
-        "country_code": "CN",
-        "lat": 39.906217,
-        "lon": 116.3912757
-    },
-    {
-        "country": "Christmas Island",
-        "city": "Flying Fish Cove",
-        "country_code": "CX",
-        "lat": -10.4206861,
-        "lon": 105.6793792
-    },
-    {
-        "country": "Cocos (Keeling) Islands",
-        "city": "West Island",
-        "country_code": "CC",
-        "lat": -12.1888345,
-        "lon": 96.82931589999998
-    },
-    {
-        "country": "Colombia",
-        "city": "Bogotá",
-        "country_code": "CO",
-        "lat": 4.60971,
-        "lon": -74.08175
-    },
-    {
-        "country": "Comoros",
-        "city": "Moroni",
-        "country_code": "KM",
-        "lat": -11.6931255,
-        "lon": 43.2543044
-    },
-    {
-        "country": "Cook Islands",
-        "city": "Avarua",
-        "country_code": "CK",
-        "lat": -21.2074736,
-        "lon": -159.7708145
-    },
-    {
-        "country": "Costa Rica",
-        "city": "San José",
-        "country_code": "CR",
-        "lat": 9.934739,
-        "lon": -84.087502
-    },
-    {
-        "country": "Croatia",
-        "city": "Zagreb",
-        "country_code": "HR",
-        "lat": 45.84264135,
-        "lon": 15.962231476593626
-    },
-    {
-        "country": "Cuba",
-        "city": "Havana",
-        "country_code": "CU",
-        "lat": 23.135305,
-        "lon": -82.3589631
-    },
-    {
-        "country": "Curaçao",
-        "city": "Willemstad",
-        "country_code": "CW",
-        "lat": 12.1224221,
-        "lon": -68.88242330000003
-    },
-    {
-        "country": "Cyprus",
-        "city": "Nicosia",
-        "country_code": "CY",
-        "lat": 35.1748976,
-        "lon": 33.3638568
-    },
-    {
-        "country": "Czech Republic",
-        "city": "Prague",
-        "country_code": "CZ",
-        "lat": 50.0874654,
-        "lon": 14.4212535
-    },
-    {
-        "country": "Côte d'Ivoire",
-        "city": "Yamoussoukro",
-        "country_code": "CI",
-        "lat": 6.809107,
-        "lon": -5.273263
-    },
-    {
-        "country": "Democratic Republic of the Congo",
-        "city": "Kinshasa",
-        "country_code": "CD",
-        "lat": -4.3217055,
-        "lon": 15.3125974
-    },
-    {
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "country_code": "DK",
-        "lat": 55.6867243,
-        "lon": 12.5700724
-    },
-    {
-        "country": "Djibouti",
-        "city": "Djibouti",
-        "country_code": "DJ",
-        "lat": 11.5936903,
-        "lon": 43.1472724
-    },
-    {
-        "country": "Dominica",
-        "city": "Roseau",
-        "country_code": "DM",
-        "lat": 15.2991923,
-        "lon": -61.3872868
-    },
-    {
-        "country": "Dominican Republic",
-        "city": "Santo Domingo",
-        "country_code": "DO",
-        "lat": 18.483402,
-        "lon": -69.929611
-    },
-    {
-        "country": "East Timor (Timor_Leste)",
-        "city": "Dili",
-        "country_code": "TL",
-        "lat": -8.5536809,
-        "lon": 125.5784093
-    },
-    {
-        "country": "Ecuador",
-        "city": "Quito",
-        "country_code": "EC",
-        "lat": -0.2201641,
-        "lon": -78.5123274
-    },
-    {
-        "country": "Egypt",
-        "city": "Cairo",
-        "country_code": "EG",
-        "lat": 30.0443879,
-        "lon": 31.2357257
-    },
-    {
-        "country": "El Salvador",
-        "city": "San Salvador",
-        "country_code": "SV",
-        "lat": 13.6929403,
-        "lon": -89.2181911
-    },
-    {
-        "country": "Equatorial Guinea",
-        "city": "Malabo",
-        "country_code": "GQ",
-        "lat": 3.752828,
-        "lon": 8.780061
-    },
-    {
-        "country": "Eritrea",
-        "city": "Asmara",
-        "country_code": "ER",
-        "lat": 15.3389667,
-        "lon": 38.9326763
-    },
-    {
-        "country": "Estonia",
-        "city": "Tallinn",
-        "country_code": "EE",
-        "lat": 59.4372155,
-        "lon": 24.7453688
-    },
-    {
-        "country": "Ethiopia",
-        "city": "Addis Ababa",
-        "country_code": "ET",
-        "lat": 9.005401,
-        "lon": 38.763611
-    },
-    {
-        "country": "Falkland Islands",
-        "city": "Stanley",
-        "country_code": "FK",
-        "lat": -51.6950575,
-        "lon": -57.8491693
-    },
-    {
-        "country": "Faroe Islands",
-        "city": "Tôrshavn",
-        "country_code": "FO",
-        "lat": 62.0097,
-        "lon": -6.7716
-    },
-    {
-        "country": "Federated States of Micronesia",
-        "city": "Palikir",
-        "country_code": "FM",
-        "lat": 6.920744,
-        "lon": 158.1627143
-    },
-    {
-        "country": "Fiji",
-        "city": "Suva",
-        "country_code": "FJ",
-        "lat": -18.1415884,
-        "lon": 178.4421662
-    },
-    {
-        "country": "Finland",
-        "city": "Helsinki",
-        "country_code": "FI",
-        "lat": 60.1674881,
-        "lon": 24.9427473
-    },
-    {
-        "country": "France",
-        "city": "Paris",
-        "country_code": "FR",
-        "lat": 48.8588897,
-        "lon": 2.3200410217200766
-    },
-    {
-        "country": "French Guiana",
-        "city": "Cayenne",
-        "country_code": "GF",
-        "lat": 4.937200,
-        "lon": -52.326000
-    },
-    {
-        "country": "French Polynesia",
-        "city": "Papeete",
-        "country_code": "PF",
-        "lat": -17.535000,
-        "lon": -149.569595
-    },
-    {
-        "country": "Gabon",
-        "city": "Libreville",
-        "country_code": "GA",
-        "lat": 0.390002,
-        "lon": 9.454001
-    },
-    {
-        "country": "Gambia",
-        "city": "Banjul",
-        "country_code": "GM",
-        "lat": 13.4410165,
-        "lon": -16.56275092072591
-    },
-    {
-        "country": "Georgia",
-        "city": "Tbilisi",
-        "country_code": "GE",
-        "lat": 41.6934591,
-        "lon": 44.8014495
-    },
-    {
-        "country": "Germany",
-        "city": "Berlin",
-        "country_code": "DE",
-        "lat": 52.5170365,
-        "lon": 13.3888599
-    },
-    {
-        "country": "Ghana",
-        "city": "Accra",
-        "country_code": "GH",
-        "lat": 5.5571096,
-        "lon": -0.2012376
-    },
-    {
-        "country": "Gibraltar",
-        "city": "Gibraltar",
-        "country_code": "GI",
-        "lat": 36.140807,
-        "lon": -5.3541295
-    },
-    {
-        "country": "Greece",
-        "city": "Athens",
-        "country_code": "GR",
-        "lat": 37.9839412,
-        "lon": 23.7283052
-    },
-    {
-        "country": "Greenland",
-        "city": "Nuuk",
-        "country_code": "GL",
-        "lat": 64.175029,
-        "lon": -51.7355386
-    },
-    {
-        "country": "Grenada",
-        "city": "St. George's",
-        "country_code": "GD",
-        "lat": 12.0564,
-        "lon": -61.7485
-    },
-    {
-        "country": "Guam",
-        "city": "Hagåtña",
-        "country_code": "GU",
-        "lat": 13.4833,
-        "lon": 144.7500
-    },
-    {
-        "country": "Guatemala",
-        "city": "Guatemala City",
-        "country_code": "GT",
-        "lat": 14.628434,
-        "lon": -90.522713
-    },
-    {
-        "country": "Guernsey",
-        "city": "St. Peter Port",
-        "country_code": "GG",
-        "lat": 49.4598,
-        "lon": -2.5353
-    },
-    {
-        "country": "Guinea",
-        "city": "Conakry",
-        "country_code": "GN",
-        "lat": 9.5170602,
-        "lon": -13.6998434
-    },
-    {
-        "country": "Guinea_Bissau",
-        "city": "Bissau",
-        "country_code": "GW",
-        "lat": 11.861324,
-        "lon": -15.583055
-    },
-    {
-        "country": "Guyana",
-        "city": "Georgetown",
-        "country_code": "GY",
-        "lat": 6.8137426,
-        "lon": -58.1624465
-    },
-    {
-        "country": "Haiti",
-        "city": "Port_au_Prince",
-        "country_code": "HT",
-        "lat": 18.547327,
-        "lon": -72.3395928
-    },
-    {
-        "country": "Honduras",
-        "city": "Tegucigalpa",
-        "country_code": "HN",
-        "lat": 14.1057433,
-        "lon": -87.2040052
-    },
-    {
-        "country": "Hungary",
-        "city": "Budapest",
-        "country_code": "HU",
-        "lat": 47.4979937,
-        "lon": 19.0403594
-    },
-    {
-        "country": "Iceland",
-        "city": "Reykjavík",
-        "country_code": "IS",
-        "lat": 64.128288,
-        "lon": -21.827774
-    },
-    {
-        "country": "India",
-        "city": "New Delhi",
-        "country_code": "IN",
-        "lat": 28.644800,
-        "lon": 77.216721
-    },
-    {
-        "country": "Indonesia",
-        "city": "Jakarta",
-        "country_code": "ID",
-        "lat": -6.1753942,
-        "lon": 106.827183
-    },
-    {
-        "country": "Iran",
-        "city": "Tehran",
-        "country_code": "IR",
-        "lat": 35.6892523,
-        "lon": 51.3896004
-    },
-    {
-        "country": "Iraq",
-        "city": "Baghdad",
-        "country_code": "IQ",
-        "lat": 33.3061701,
-        "lon": 44.3872213
-    },
-    {
-        "country": "Ireland",
-        "city": "Dublin",
-        "country_code": "IE",
-        "lat": 53.3498006,
-        "lon": -6.2602964
-    },
-    {
-        "country": "Isle of Man",
-        "city": "Douglas",
-        "country_code": "IM",
-        "lat": 54.149774,
-        "lon": -4.4779021
-    },
-    {
-        "country": "Israel",
-        "city": "Jerusalem",
-        "country_code": "IL",
-        "lat": 31.79592425,
-        "lon": 35.21198075969497
-    },
-    {
-        "country": "Italy",
-        "city": "Rome",
-        "country_code": "IT",
-        "lat": 41.8933203,
-        "lon": 12.4829321
-    },
-    {
-        "country": "Jamaica",
-        "city": "Kingston",
-        "country_code": "JM",
-        "lat": 17.9712148,
-        "lon": -76.7928128
-    },
-    {
-        "country": "Japan",
-        "city": "Tokyo",
-        "country_code": "JP",
-        "lat": 35.6828387,
-        "lon": 139.7594549
-    },
-    {
-        "country": "Jersey",
-        "city": "St. Helier",
-        "country_code": "JE",
-        "lat": 49.1880,
-        "lon": -2.1049
-    },
-    {
-        "country": "Jordan",
-        "city": "Amman",
-        "country_code": "JO",
-        "lat": 31.9515694,
-        "lon": 35.9239625
-    },
-    {
-        "country": "Kazakhstan",
-        "city": "Astana",
-        "country_code": "KZ",
-        "lat": 51.1282205,
-        "lon": 71.4306682
-    },
-    {
-        "country": "Kenya",
-        "city": "Nairobi",
-        "country_code": "KE",
-        "lat": -1.30326415,
-        "lon": 36.826384099341595
-    },
-    {
-        "country": "Kiribati",
-        "city": "Tarawa",
-        "country_code": "KI",
-        "lat": 1.3490778,
-        "lon": 173.0386512
-    },
-    {
-        "country": "Kosovo",
-        "city": "Pristina",
-        "country_code": "XK",
-        "lat": 42.6638771,
-        "lon": 21.1640849
-    },
-    {
-        "country": "Kuwait",
-        "city": "Kuwait City",
-        "country_code": "KW",
-        "lat": 29.378586,
-        "lon": 47.990341
-    },
-    {
-        "country": "Kyrgyzstan",
-        "city": "Bishkek",
-        "country_code": "KG",
-        "lat": 42.8765615,
-        "lon": 74.6070079
-    },
-    {
-        "country": "Laos",
-        "city": "Vientiane",
-        "country_code": "LA",
-        "lat": 17.9640988,
-        "lon": 102.6133707
-    },
-    {
-        "country": "Latvia",
-        "city": "Riga",
-        "country_code": "LV",
-        "lat": 56.9493977,
-        "lon": 24.1051846
-    },
-    {
-        "country": "Lebanon",
-        "city": "Beirut",
-        "country_code": "LB",
-        "lat": 33.8959203,
-        "lon": 35.47843
-    },
-    {
-        "country": "Lesotho",
-        "city": "Maseru",
-        "country_code": "LS",
-        "lat": -29.310054,
-        "lon": 27.478222
-    },
-    {
-        "country": "Liberia",
-        "city": "Monrovia",
-        "country_code": "LR",
-        "lat": 6.328034,
-        "lon": -10.797788
-    },
-    {
-        "country": "Libya",
-        "city": "Tripoli",
-        "country_code": "LY",
-        "lat": 32.896672,
-        "lon": 13.1777923
-    },
-    {
-        "country": "Liechtenstein",
-        "city": "Vaduz",
-        "country_code": "LI",
-        "lat": 47.1392862,
-        "lon": 9.5227962
-    },
-    {
-        "country": "Lithuania",
-        "city": "Vilnius",
-        "country_code": "LT",
-        "lat": 54.6870458,
-        "lon": 25.2829111
-    },
-    {
-        "country": "Luxembourg",
-        "city": "Luxembourg",
-        "country_code": "LU",
-        "lat": 49.6112768,
-        "lon": 6.129799
-    },
-    {
-        "country": "Macedonia",
-        "city": "Skopje",
-        "country_code": "MK",
-        "lat": 41.9960924,
-        "lon": 21.4316495
-    },
-    {
-        "country": "Madagascar",
-        "city": "Antananarivo",
-        "country_code": "MG",
-        "lat": -18.9100122,
-        "lon": 47.5255809
-    },
-    {
-        "country": "Malawi",
-        "city": "Lilongwe",
-        "country_code": "MW",
-        "lat": -13.9875107,
-        "lon": 33.768144
-    },
-    {
-        "country": "Malaysia",
-        "city": "Kuala Lumpur",
-        "country_code": "MY",
-        "lat": 3.139003,
-        "lon": 101.686855
-    },
-    {
-        "country": "Maldives",
-        "city": "Malé",
-        "country_code": "MV",
-        "lat": 4.1748,
-        "lon": 73.5089
-    },
-    {
-        "country": "Mali",
-        "city": "Bamako",
-        "country_code": "ML",
-        "lat": 12.649319,
-        "lon": -8.000337
-    },
-    {
-        "country": "Malta",
-        "city": "Valletta",
-        "country_code": "MT",
-        "lat": 35.8989818,
-        "lon": 14.5136759
-    },
-    {
-        "country": "Marshall Islands",
-        "city": "Majuro",
-        "country_code": "MH",
-        "lat": 7.0909924,
-        "lon": 171.3816354
-    },
-    {
-        "country": "Mauritania",
-        "city": "Nouakchott",
-        "country_code": "MR",
-        "lat": 18.0792379,
-        "lon": -15.9780071
-    },
-    {
-        "country": "Mauritius",
-        "city": "Port Louis",
-        "country_code": "MU",
-        "lat": -20.1667,
-        "lon": 57.5000
-    },
-    {
-        "country": "Mexico",
-        "city": "Mexico City",
-        "country_code": "MX",
-        "lat": 19.432608,
-        "lon": -99.133209
-    },
-    {
-        "country": "Moldova",
-        "city": "Chisinau",
-        "country_code": "MD",
-        "lat": 47.0245117,
-        "lon": 28.8322923
-    },
-    {
-        "country": "Monaco",
-        "city": "Monaco",
-        "country_code": "MC",
-        "lat": 43.7311424,
-        "lon": 7.4197576
-    },
-    {
-        "country": "Mongolia",
-        "city": "Ulaanbaatar",
-        "country_code": "MN",
-        "lat": 47.9184676,
-        "lon": 106.9177016
-    },
-    {
-        "country": "Montenegro",
-        "city": "Podgorica",
-        "country_code": "ME",
-        "lat": 42.4415238,
-        "lon": 19.2621081
-    },
-    {
-        "country": "Montserrat",
-        "city": "Plymouth",
-        "country_code": "MS",
-        "lat": 16.7064,
-        "lon": -62.2158
-    },
-    {
-        "country": "Morocco",
-        "city": "Rabat",
-        "country_code": "MA",
-        "lat": 34.022405,
-        "lon": -6.834543
-    },
-    {
-        "country": "Mozambique",
-        "city": "Maputo",
-        "country_code": "MZ",
-        "lat": -25.966213,
-        "lon": 32.56745
-    },
-    {
-        "country": "Myanmar",
-        "city": "Naypyidaw",
-        "country_code": "MM",
-        "lat": 19.7540045,
-        "lon": 96.1344976
-    },
-    {
-        "country": "Namibia",
-        "city": "Windhoek",
-        "country_code": "NA",
-        "lat": -22.5776104,
-        "lon": 17.0772739
-    },
-    {
-        "country": "Nauru",
-        "city": "Yaren",
-        "country_code": "NR",
-        "lat": -0.5471014,
-        "lon": 166.9164002
-    },
-    {
-        "country": "Nepal",
-        "city": "Kathmandu",
-        "country_code": "NP",
-        "lat": 27.708317,
-        "lon": 85.3205817
-    },
-    {
-        "country": "Netherlands",
-        "city": "Amsterdam",
-        "country_code": "NL",
-        "lat": 52.3727598,
-        "lon": 4.8936041
-    },
-    {
-        "country": "New Caledonia",
-        "city": "Nouméa",
-        "country_code": "NC",
-        "lat": -22.275801,
-        "lon": 166.457993
-    },
-    {
-        "country": "New Zealand",
-        "city": "Wellington",
-        "country_code": "NZ",
-        "lat": -41.2887953,
-        "lon": 174.7772114
-    },
-    {
-        "country": "Nicaragua",
-        "city": "Managua",
-        "country_code": "NI",
-        "lat": 12.1544035,
-        "lon": -86.2737642
-    },
-    {
-        "country": "Niger",
-        "city": "Niamey",
-        "country_code": "NE",
-        "lat": 13.524834,
-        "lon": 2.109823
-    },
-    {
-        "country": "Nigeria",
-        "city": "Abuja",
-        "country_code": "NG",
-        "lat": 9.0643305,
-        "lon": 7.4892974
-    },
-    {
-        "country": "Niue",
-        "city": "Alofi",
-        "country_code": "NU",
-        "lat": -19.0534159,
-        "lon": -169.919199
-    },
-    {
-        "country": "Norfolk Island",
-        "city": "Kingston",
-        "country_code": "NF",
-        "lat": -29.0500,
-        "lon": 167.9666
-    },
-    {
-        "country": "North Korea",
-        "city": "Pyongyang",
-        "country_code": "KP",
-        "lat": 39.0167979,
-        "lon": 125.7473609
-    },
-    {
-        "country": "Northern Cyprus",
-        "city": "Nicosia",
-        "country_code": "CY",
-        "lat": 35.1748976,
-        "lon": 33.3638568
-    },
-    {
-        "country": "Northern Mariana Islands",
-        "city": "Saipan",
-        "country_code": "MP",
-        "lat": 15.183333,
-        "lon": 145.750000
-    },
-    {
-        "country": "Norway",
-        "city": "Oslo",
-        "country_code": "NO",
-        "lat": 59.9133301,
-        "lon": 10.7389701
-    },
-    {
-        "country": "Oman",
-        "city": "Muscat",
-        "country_code": "OM",
-        "lat": 23.61515,
-        "lon": 58.5912467
-    },
-    {
-        "country": "Pakistan",
-        "city": "Islamabad",
-        "country_code": "PK",
-        "lat": 33.6938118,
-        "lon": 73.0651511
-    },
-    {
-        "country": "Palau",
-        "city": "Ngerulmud",
-        "country_code": "PW",
-        "lat": 7.5006446,
-        "lon": 134.6242864
-    },
-    {
-        "country": "Palestine",
-        "city": "Jerusalem",
-        "country_code": "PS",
-        "lat": 31.7833,
-        "lon": 35.2167
-    },
-    {
-        "country": "Panama",
-        "city": "Panama City",
-        "country_code": "PA",
-        "lat": 8.983333,
-        "lon": -79.516670
-    },
-    {
-        "country": "Papua New Guinea",
-        "city": "Port Moresby",
-        "country_code": "PG",
-        "lat": -9.4431,
-        "lon": 147.1797
-    },
-    {
-        "country": "Paraguay",
-        "city": "Asunciôn",
-        "country_code": "PY",
-        "lat": -25.3007,
-        "lon": -57.6359
-    },
-    {
-        "country": "Peru",
-        "city": "Lima",
-        "country_code": "PE",
-        "lat": -12.0621065,
-        "lon": -77.0365256
-    },
-    {
-        "country": "Philippines",
-        "city": "Manila",
-        "country_code": "PH",
-        "lat": 14.5948914,
-        "lon": 120.9782618
-    },
-    {
-        "country": "Pitcairn Islands",
-        "city": "Adamstown",
-        "country_code": "PN",
-        "lat": -25.066667,
-        "lon": -130.100205
-    },
-    {
-        "country": "Poland",
-        "city": "Warsaw",
-        "country_code": "PL",
-        "lat": 52.2319581,
-        "lon": 21.0067249
-    },
-    {
-        "country": "Portugal",
-        "city": "Lisbon",
-        "country_code": "PT",
-        "lat": 38.7077507,
-        "lon": -9.1365919
-    },
-    {
-        "country": "Puerto Rico",
-        "city": "San Juan",
-        "country_code": "PR",
-        "lat": 18.466333,
-        "lon": -66.105721
-    },
-    {
-        "country": "Qatar",
-        "city": "Doha",
-        "country_code": "QA",
-        "lat": 25.2856329,
-        "lon": 51.5264162
-    },
-    {
-        "country": "Republic of the Congo",
-        "city": "Brazzaville",
-        "country_code": "CG",
-        "lat": -4.2694407,
-        "lon": 15.2712256
-    },
-    {
-        "country": "Romania",
-        "city": "Bucharest",
-        "country_code": "RO",
-        "lat": 44.4361414,
-        "lon": 26.1027202
-    },
-    {
-        "country": "Russia",
-        "city": "Moscow",
-        "country_code": "RU",
-        "lat": 55.7504461,
-        "lon": 37.6174943
-    },
-    {
-        "country": "Rwanda",
-        "city": "Kigali",
-        "country_code": "RW",
-        "lat": -1.950851,
-        "lon": 30.061507
-    },
-    {
-        "country": "Saint Barthélemy",
-        "city": "Gustavia",
-        "country_code": "BL",
-        "lat": 17.8962,
-        "lon": -62.8498
-    },
-    {
-        "country": "Saint Helena",
-        "city": "Jamestown",
-        "country_code": "SH",
-        "lat": -15.9277296,
-        "lon": -5.7160872
-    },
-    {
-        "country": "Saint Kitts and Nevis",
-        "city": "Basseterre",
-        "country_code": "KN",
-        "lat": 17.2960919,
-        "lon": -62.722301
-    },
-    {
-        "country": "Saint Lucia",
-        "city": "Castries",
-        "country_code": "LC",
-        "lat": 14.0095966,
-        "lon": -60.9902359
-    },
-    {
-        "country": "Saint Martin",
-        "city": "Marigot",
-        "country_code": "MF",
-        "lat": 18.073099,
-        "lon": -63.082199
-    },
-    {
-        "country": "Saint Pierre and Miquelon",
-        "city": "St. Pierre",
-        "country_code": "PM",
-        "lat": 46.9467,
-        "lon": -56.2623
-    },
-    {
-        "country": "Saint Vincent and the Grenadines",
-        "city": "Kingstown",
-        "country_code": "VC",
-        "lat": 13.1561864,
-        "lon": -61.2279621
-    },
-    {
-        "country": "Samoa",
-        "city": "Apia",
-        "country_code": "WS",
-        "lat": -13.8343691,
-        "lon": -171.7692793
-    },
-    {
-        "country": "San Marino",
-        "city": "San Marino",
-        "country_code": "SM",
-        "lat": 43.9428779,
-        "lon": 12.4600933
-    },
-    {
-        "country": "Saudi Arabia",
-        "city": "Riyadh",
-        "country_code": "SA",
-        "lat": 24.638916,
-        "lon": 46.7160104
-    },
-    {
-        "country": "Senegal",
-        "city": "Dakar",
-        "country_code": "SN",
-        "lat": 14.693425,
-        "lon": -17.447938
-    },
-    {
-        "country": "Serbia",
-        "city": "Belgrade",
-        "country_code": "RS",
-        "lat": 44.8178131,
-        "lon": 20.4568974
-    },
-    {
-        "country": "Seychelles",
-        "city": "Victoria",
-        "country_code": "SC",
-        "lat": -4.6232085,
-        "lon": 55.452359
-    },
-    {
-        "country": "Sierra Leone",
-        "city": "Freetown",
-        "country_code": "SL",
-        "lat": 8.479004,
-        "lon": -13.26795
-    },
-    {
-        "country": "Singapore",
-        "city": "Singapore",
-        "country_code": "SG",
-        "lat": 1.2899175,
-        "lon": 103.8519072
-    },
-    {
-        "country": "Sint Maarten",
-        "city": "Philipsburg",
-        "country_code": "SX",
-        "lat": 18.0237,
-        "lon": -63.0458
-    },
-    {
-        "country": "Slovakia",
-        "city": "Bratislava",
-        "country_code": "SK",
-        "lat": 48.1516988,
-        "lon": 17.1093063
-    },
-    {
-        "country": "Slovenia",
-        "city": "Ljubljana",
-        "country_code": "SI",
-        "lat": 46.0500268,
-        "lon": 14.5069289
-    },
-    {
-        "country": "Solomon Islands",
-        "city": "Honiara",
-        "country_code": "SB",
-        "lat": -9.4310769,
-        "lon": 159.9552552
-    },
-    {
-        "country": "Somalia",
-        "city": "Mogadishu",
-        "country_code": "SO",
-        "lat": 2.0349312,
-        "lon": 45.3419183
-    },
-    {
-        "country": "South Africa",
-        "city": "Pretoria",
-        "country_code": "ZA",
-        "lat": -25.7459277,
-        "lon": 28.1879101
-    },
-    {
-        "country": "South Georgia and the South Sandwich Islands",
-        "city": "Grytviken",
-        "country_code": "GS",
-        "lat": -54.2806481,
-        "lon": -36.5098
-    },
-    {
-        "country": "South Korea",
-        "city": "Seoul",
-        "country_code": "KR",
-        "lat": 37.5666791,
-        "lon": 126.9782914
-    },
-    {
-        "country": "South Sudan",
-        "city": "Juba",
-        "country_code": "SS",
-        "lat": 4.8459246,
-        "lon": 31.5959173
-    },
-    {
-        "country": "Spain",
-        "city": "Madrid",
-        "country_code": "ES",
-        "lat": 40.4167047,
-        "lon": -3.7035825
-    },
-    {
-        "country": "Sri Lanka",
-        "city": "Sri Jayawardenapura Kotte",
-        "country_code": "LK",
-        "lat": 6.894070,
-        "lon": 79.902481
-    },
-    {
-        "country": "Sudan",
-        "city": "Khartoum",
-        "country_code": "SD",
-        "lat": 15.5635972,
-        "lon": 32.5349123
-    },
-    {
-        "country": "Suriname",
-        "city": "Paramaribo",
-        "country_code": "SR",
-        "lat": 5.8247628,
-        "lon": -55.1703941
-    },
-    {
-        "country": "Swaziland",
-        "city": "Mbabane",
-        "country_code": "SZ",
-        "lat": -26.325745,
-        "lon": 31.144663
-    },
-    {
-        "country": "Sweden",
-        "city": "Stockholm",
-        "country_code": "SE",
-        "lat": 59.3251172,
-        "lon": 18.0710935
-    },
-    {
-        "country": "Switzerland",
-        "city": "Bern",
-        "country_code": "CH",
-        "lat": 46.9482713,
-        "lon": 7.4514512
-    },
-    {
-        "country": "Syria",
-        "city": "Damascus",
-        "country_code": "SY",
-        "lat": 33.5130695,
-        "lon": 36.3095814
-    },
-    {
-        "country": "São Tomé and Príncipe",
-        "city": "São Tomé",
-        "country_code": "ST",
-        "lat": 0.255436,
-        "lon": 6.602781
-    },
-    {
-        "country": "Tajikistan",
-        "city": "Dushanbe",
-        "country_code": "TJ",
-        "lat": 38.5425835,
-        "lon": 68.81521423589763
-    },
-    {
-        "country": "Tanzania",
-        "city": "Dodoma",
-        "country_code": "TZ",
-        "lat": -6.1791181,
-        "lon": 35.7468174
-    },
-    {
-        "country": "Thailand",
-        "city": "Bangkok",
-        "country_code": "TH",
-        "lat": 13.7524938,
-        "lon": 100.4935089
-    },
-    {
-        "country": "Togo",
-        "city": "Lomé",
-        "country_code": "TG",
-        "lat": 6.136629,
-        "lon": 1.222186
-    },
-    {
-        "country": "Tonga",
-        "city": "Nuku'alofa",
-        "country_code": "TO",
-        "lat": -21.1343401,
-        "lon": -175.201808
-    },
-    {
-        "country": "Trinidad and Tobago",
-        "city": "Port of Spain",
-        "country_code": "TT",
-        "lat": 10.671067,
-        "lon": -61.521206
-    },
-    {
-        "country": "Tristan da Cunha",
-        "city": "Edinburgh of the Seven Seas",
-        "country_code": "SH",
-        "lat": -37.0667,
-        "lon": -12.3167
-    },
-    {
-        "country": "Tunisia",
-        "city": "Tunis",
-        "country_code": "TN",
-        "lat": 36.8002068,
-        "lon": 10.1857757
-    },
-    {
-        "country": "Turkey",
-        "city": "Ankara",
-        "country_code": "TR",
-        "lat": 39.9207886,
-        "lon": 32.8540482
-    },
-    {
-        "country": "Turkmenistan",
-        "city": "Ashgabat",
-        "country_code": "TM",
-        "lat": 37.9404648,
-        "lon": 58.3823487
-    },
-    {
-        "country": "Turks and Caicos Islands",
-        "city": "Cockburn Town",
-        "country_code": "TC",
-        "lat": 21.4612,
-        "lon": -71.1419
-    },
-    {
-        "country": "Tuvalu",
-        "city": "Funafuti",
-        "country_code": "TV",
-        "lat": -8.5199633,
-        "lon": 179.1982548
-    },
-    {
-        "country": "Uganda",
-        "city": "Kampala",
-        "country_code": "UG",
-        "lat": 0.3177137,
-        "lon": 32.5813539
-    },
-    {
-        "country": "Ukraine",
-        "city": "Kiev",
-        "country_code": "UA",
-        "lat": 50.4500336,
-        "lon": 30.5241361
-    },
-    {
-        "country": "United Arab Emirates",
-        "city": "Abu Dhabi",
-        "country_code": "AE",
-        "lat": 24.466667,
-        "lon": 54.366669
-    },
-    {
-        "country": "United Kingdom",
-        "city": "London",
-        "country_code": "GB",
-        "lat": 51.5073219,
-        "lon": -0.1276474
-    },
-    {
-        "country": "United States",
-        "city": "Washington, D.C.",
-        "country_code": "US",
-        "lat": 38.8951,
-        "lon": -77.0364
-    },
-    {
-        "country": "United States Virgin Islands",
-        "city": "Charlotte Amalie",
-        "country_code": "VI",
-        "lat": 18.3419,
-        "lon": -64.930701
-    },
-    {
-        "country": "Uruguay",
-        "city": "Montevideo",
-        "country_code": "UY",
-        "lat": -34.9058916,
-        "lon": -56.1913095
-    },
-    {
-        "country": "Uzbekistan",
-        "city": "Tashkent",
-        "country_code": "UZ",
-        "lat": 41.3123363,
-        "lon": 69.2787079
-    },
-    {
-        "country": "Vanuatu",
-        "city": "Port Vila",
-        "country_code": "VU",
-        "lat": -17.734818,
-        "lon": 168.322021
-    },
-    {
-        "country": "Vatican City",
-        "city": "Vatican City",
-        "country_code": "VA",
-        "lat": 41.90236,
-        "lon": 12.45332
-    },
-    {
-        "country": "Venezuela",
-        "city": "Caracas",
-        "country_code": "VE",
-        "lat": 10.5060934,
-        "lon": -66.9146008
-    },
-    {
-        "country": "Vietnam",
-        "city": "Hanoi",
-        "country_code": "VN",
-        "lat": 21.0294498,
-        "lon": 105.8544441
-    },
-    {
-        "country": "Wallis and Futuna",
-        "city": "Mata_Utu",
-        "country_code": "WF",
-        "lat": -13.2833,
-        "lon": -176.1833
-    },
-    {
-        "country": "Western Sahara",
-        "city": "El Aaiún",
-        "country_code": "EH",
-        "lat": 27.1536111111,
-        "lon": -13.2033333333
-    },
-    {
-        "country": "Yemen",
-        "city": "Sanaá",
-        "country_code": "YE",
-        "lat": -15.4164124,
-        "lon": 28.2824793
-    },
-    {
-        "country": "Zambia",
-        "city": "Lusaka",
-        "country_code": "ZM",
-        "lat": 15.369445,
-        "lon": 44.191006
-    },
-    {
-        "country": "Zimbabwe",
-        "city": "Harare",
-        "country_code": "ZW",
-        "lat": -17.831773,
-        "lon": 31.045686
-    }
-]
+{
+    "capitals": [
+        {
+            "country": "Abkhazia",
+            "city": "Sukhumi",
+            "country_code": "GE",
+            "lat": 43.0033629,
+            "lon": 41.0192741
+        },
+        {
+            "country": "Afghanistan",
+            "city": "Kabul",
+            "country_code": "AF",
+            "lat": 34.5260109,
+            "lon": 69.1776838
+        },
+        {
+            "country": "Albania",
+            "city": "Tirana",
+            "country_code": "AL",
+            "lat": 41.3305141,
+            "lon": 19.825562857582966
+        },
+        {
+            "country": "Algeria",
+            "city": "Algiers",
+            "country_code": "DZ",
+            "lat": 36.7753606,
+            "lon": 3.0601882
+        },
+        {
+            "country": "American Samoa",
+            "city": "Pago Pago",
+            "country_code": "AS",
+            "lat": -14.275632,
+            "lon": -170.702042
+        },
+        {
+            "country": "Andorra",
+            "city": "Andorra la Vella",
+            "country_code": "AD",
+            "lat": 42.506317,
+            "lon": 1.521835
+        },
+        {
+            "country": "Angola",
+            "city": "Luanda",
+            "country_code": "AO",
+            "lat": -8.8272699,
+            "lon": 13.2439512
+        },
+        {
+            "country": "Anguilla",
+            "city": "The Valley",
+            "country_code": "AI",
+            "lat": -8.8272699,
+            "lon": 13.2439512
+        },
+        {
+            "country": "Antigua and Barbuda",
+            "city": "St. John's",
+            "country_code": "AG",
+            "lat": 18.21704,
+            "lon": -63.05783
+        },
+        {
+            "country": "Argentina",
+            "city": "Buenos Aires",
+            "country_code": "AR",
+            "lat": -34.603722,
+            "lon": -58.381592
+        },
+        {
+            "country": "Armenia",
+            "city": "Yerevan",
+            "country_code": "AM",
+            "lat": 40.1776245,
+            "lon": 44.5126174
+        },
+        {
+            "country": "Aruba",
+            "city": "Oranjestad",
+            "country_code": "AW",
+            "lat": 17.48268,
+            "lon": -62.98324
+        },
+        {
+            "country": "Ascension Island",
+            "city": "Georgetown",
+            "country_code": "SH",
+            "lat": -7.9289722,
+            "lon": -14.4133993
+        },
+        {
+            "country": "Australia",
+            "city": "Canberra",
+            "country_code": "AU",
+            "lat": -35.2975906,
+            "lon": 149.1012676
+        },
+        {
+            "country": "Austria",
+            "city": "Vienna",
+            "country_code": "AT",
+            "lat": 48.2083537,
+            "lon": 16.3725042
+        },
+        {
+            "country": "Azerbaijan",
+            "city": "Baku",
+            "country_code": "AZ",
+            "lat": 40.3755885,
+            "lon": 49.8328009
+        },
+        {
+            "country": "Bahamas",
+            "city": "Nassau",
+            "country_code": "BS",
+            "lat": 25.0783456,
+            "lon": -77.3383331
+        },
+        {
+            "country": "Bahrain",
+            "city": "Manama",
+            "country_code": "BH",
+            "lat": 26.2235041,
+            "lon": 50.5822436
+        },
+        {
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "country_code": "BD",
+            "lat": 23.7644025,
+            "lon": 90.389015
+        },
+        {
+            "country": "Barbados",
+            "city": "Bridgetown",
+            "country_code": "BB",
+            "lat": 13.0977832,
+            "lon": -59.6184184
+        },
+        {
+            "country": "Belarus",
+            "city": "Minsk",
+            "country_code": "BY",
+            "lat": 53.9024716,
+            "lon": 27.5618225
+        },
+        {
+            "country": "Belgium",
+            "city": "Brussels",
+            "country_code": "BE",
+            "lat": 50.8465573,
+            "lon": 4.351697
+        },
+        {
+            "country": "Belize",
+            "city": "Belmopan",
+            "country_code": "BZ",
+            "lat": 17.250199,
+            "lon": -88.770018
+        },
+        {
+            "country": "Benin",
+            "city": "Porto_Novo",
+            "country_code": "BJ",
+            "lat": 6.4990718,
+            "lon": 2.6253361
+        },
+        {
+            "country": "Bermuda",
+            "city": "Hamilton",
+            "country_code": "BM",
+            "lat": 32.2956076,
+            "lon": -64.7827048
+        },
+        {
+            "country": "Bhutan",
+            "city": "Thimphu",
+            "country_code": "BT",
+            "lat": 27.4713546,
+            "lon": 89.6336729
+        },
+        {
+            "country": "Bolivia",
+            "city": "Sucre",
+            "country_code": "BO",
+            "lat": -19.0477251,
+            "lon": -65.2594306
+        },
+        {
+            "country": "Bolivia",
+            "city": "La Paz",
+            "country_code": "BO",
+            "lat": -16.489689,
+            "lon": -68.119293
+        },
+        {
+            "country": "Bosnia and Herzegovina",
+            "city": "Sarajevo",
+            "country_code": "BA",
+            "lat": 43.8519774,
+            "lon": 18.3866868
+        },
+        {
+            "country": "Botswana",
+            "city": "Gaborone",
+            "country_code": "BW",
+            "lat": -24.6581357,
+            "lon": 25.9088474
+        },
+        {
+            "country": "Brazil",
+            "city": "Brasília",
+            "country_code": "BR",
+            "lat": -15.790669,
+            "lon": -47.892967
+        },
+        {
+            "country": "British Virgin Islands",
+            "city": "Road Town",
+            "country_code": "VG",
+            "lat": 18.4286115,
+            "lon": -64.6184657
+        },
+        {
+            "country": "Brunei",
+            "city": "Bandar Seri Begawan",
+            "country_code": "BN",
+            "lat": 4.89035,
+            "lon": 114.94006
+        },
+        {
+            "country": "Bulgaria",
+            "city": "Sofia",
+            "country_code": "BG",
+            "lat": 42.6977028,
+            "lon": 23.3217359
+        },
+        {
+            "country": "Burkina Faso",
+            "city": "Ouagadougou",
+            "country_code": "BF",
+            "lat": 12.3681873,
+            "lon": -1.5270944
+        },
+        {
+            "country": "Burundi",
+            "city": "Bujumbura",
+            "country_code": "BI",
+            "lat": -3.3638125,
+            "lon": 29.3675028
+        },
+        {
+            "country": "Cambodia",
+            "city": "Phnom Penh",
+            "country_code": "KH",
+            "lat": 11.5448729,
+            "lon": 104.8921668
+        },
+        {
+            "country": "Cameroon",
+            "city": "Yaoundé",
+            "country_code": "CM",
+            "lat": 3.866667,
+            "lon": 11.516667
+        },
+        {
+            "country": "Canada",
+            "city": "Ottawa",
+            "country_code": "CA",
+            "lat": 45.4208777,
+            "lon": -75.6901106
+        },
+        {
+            "country": "Cape Verde",
+            "city": "Praia",
+            "country_code": "CV",
+            "lat": 14.9162811,
+            "lon": -23.5095095
+        },
+        {
+            "country": "Cayman Islands",
+            "city": "George Town",
+            "country_code": "KY",
+            "lat": 19.292997,
+            "lon": -81.366806
+        },
+        {
+            "country": "Central African Republic",
+            "city": "Bangui",
+            "country_code": "CF",
+            "lat": 4.3907153,
+            "lon": 18.5509126
+        },
+        {
+            "country": "Chad",
+            "city": "N'Djamena",
+            "country_code": "TD",
+            "lat": 12.1191543,
+            "lon": 15.0502758
+        },
+        {
+            "country": "Chile",
+            "city": "Santiago",
+            "country_code": "CL",
+            "lat": -33.4377756,
+            "lon": -70.6504502
+        },
+        {
+            "country": "China",
+            "city": "Beijing",
+            "country_code": "CN",
+            "lat": 39.906217,
+            "lon": 116.3912757
+        },
+        {
+            "country": "Christmas Island",
+            "city": "Flying Fish Cove",
+            "country_code": "CX",
+            "lat": -10.4206861,
+            "lon": 105.6793792
+        },
+        {
+            "country": "Cocos (Keeling) Islands",
+            "city": "West Island",
+            "country_code": "CC",
+            "lat": -12.1888345,
+            "lon": 96.82931589999998
+        },
+        {
+            "country": "Colombia",
+            "city": "Bogotá",
+            "country_code": "CO",
+            "lat": 4.60971,
+            "lon": -74.08175
+        },
+        {
+            "country": "Comoros",
+            "city": "Moroni",
+            "country_code": "KM",
+            "lat": -11.6931255,
+            "lon": 43.2543044
+        },
+        {
+            "country": "Cook Islands",
+            "city": "Avarua",
+            "country_code": "CK",
+            "lat": -21.2074736,
+            "lon": -159.7708145
+        },
+        {
+            "country": "Costa Rica",
+            "city": "San José",
+            "country_code": "CR",
+            "lat": 9.934739,
+            "lon": -84.087502
+        },
+        {
+            "country": "Croatia",
+            "city": "Zagreb",
+            "country_code": "HR",
+            "lat": 45.84264135,
+            "lon": 15.962231476593626
+        },
+        {
+            "country": "Cuba",
+            "city": "Havana",
+            "country_code": "CU",
+            "lat": 23.135305,
+            "lon": -82.3589631
+        },
+        {
+            "country": "Curaçao",
+            "city": "Willemstad",
+            "country_code": "CW",
+            "lat": 12.1224221,
+            "lon": -68.88242330000003
+        },
+        {
+            "country": "Cyprus",
+            "city": "Nicosia",
+            "country_code": "CY",
+            "lat": 35.1748976,
+            "lon": 33.3638568
+        },
+        {
+            "country": "Czech Republic",
+            "city": "Prague",
+            "country_code": "CZ",
+            "lat": 50.0874654,
+            "lon": 14.4212535
+        },
+        {
+            "country": "Côte d'Ivoire",
+            "city": "Yamoussoukro",
+            "country_code": "CI",
+            "lat": 6.809107,
+            "lon": -5.273263
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "city": "Kinshasa",
+            "country_code": "CD",
+            "lat": -4.3217055,
+            "lon": 15.3125974
+        },
+        {
+            "country": "Denmark",
+            "city": "Copenhagen",
+            "country_code": "DK",
+            "lat": 55.6867243,
+            "lon": 12.5700724
+        },
+        {
+            "country": "Djibouti",
+            "city": "Djibouti",
+            "country_code": "DJ",
+            "lat": 11.5936903,
+            "lon": 43.1472724
+        },
+        {
+            "country": "Dominica",
+            "city": "Roseau",
+            "country_code": "DM",
+            "lat": 15.2991923,
+            "lon": -61.3872868
+        },
+        {
+            "country": "Dominican Republic",
+            "city": "Santo Domingo",
+            "country_code": "DO",
+            "lat": 18.483402,
+            "lon": -69.929611
+        },
+        {
+            "country": "East Timor (Timor_Leste)",
+            "city": "Dili",
+            "country_code": "TL",
+            "lat": -8.5536809,
+            "lon": 125.5784093
+        },
+        {
+            "country": "Ecuador",
+            "city": "Quito",
+            "country_code": "EC",
+            "lat": -0.2201641,
+            "lon": -78.5123274
+        },
+        {
+            "country": "Egypt",
+            "city": "Cairo",
+            "country_code": "EG",
+            "lat": 30.0443879,
+            "lon": 31.2357257
+        },
+        {
+            "country": "El Salvador",
+            "city": "San Salvador",
+            "country_code": "SV",
+            "lat": 13.6929403,
+            "lon": -89.2181911
+        },
+        {
+            "country": "Equatorial Guinea",
+            "city": "Malabo",
+            "country_code": "GQ",
+            "lat": 3.752828,
+            "lon": 8.780061
+        },
+        {
+            "country": "Eritrea",
+            "city": "Asmara",
+            "country_code": "ER",
+            "lat": 15.3389667,
+            "lon": 38.9326763
+        },
+        {
+            "country": "Estonia",
+            "city": "Tallinn",
+            "country_code": "EE",
+            "lat": 59.4372155,
+            "lon": 24.7453688
+        },
+        {
+            "country": "Ethiopia",
+            "city": "Addis Ababa",
+            "country_code": "ET",
+            "lat": 9.005401,
+            "lon": 38.763611
+        },
+        {
+            "country": "Falkland Islands",
+            "city": "Stanley",
+            "country_code": "FK",
+            "lat": -51.6950575,
+            "lon": -57.8491693
+        },
+        {
+            "country": "Faroe Islands",
+            "city": "Tôrshavn",
+            "country_code": "FO",
+            "lat": 62.0097,
+            "lon": -6.7716
+        },
+        {
+            "country": "Federated States of Micronesia",
+            "city": "Palikir",
+            "country_code": "FM",
+            "lat": 6.920744,
+            "lon": 158.1627143
+        },
+        {
+            "country": "Fiji",
+            "city": "Suva",
+            "country_code": "FJ",
+            "lat": -18.1415884,
+            "lon": 178.4421662
+        },
+        {
+            "country": "Finland",
+            "city": "Helsinki",
+            "country_code": "FI",
+            "lat": 60.1674881,
+            "lon": 24.9427473
+        },
+        {
+            "country": "France",
+            "city": "Paris",
+            "country_code": "FR",
+            "lat": 48.8588897,
+            "lon": 2.3200410217200766
+        },
+        {
+            "country": "French Guiana",
+            "city": "Cayenne",
+            "country_code": "GF",
+            "lat": 4.937200,
+            "lon": -52.326000
+        },
+        {
+            "country": "French Polynesia",
+            "city": "Papeete",
+            "country_code": "PF",
+            "lat": -17.535000,
+            "lon": -149.569595
+        },
+        {
+            "country": "Gabon",
+            "city": "Libreville",
+            "country_code": "GA",
+            "lat": 0.390002,
+            "lon": 9.454001
+        },
+        {
+            "country": "Gambia",
+            "city": "Banjul",
+            "country_code": "GM",
+            "lat": 13.4410165,
+            "lon": -16.56275092072591
+        },
+        {
+            "country": "Georgia",
+            "city": "Tbilisi",
+            "country_code": "GE",
+            "lat": 41.6934591,
+            "lon": 44.8014495
+        },
+        {
+            "country": "Germany",
+            "city": "Berlin",
+            "country_code": "DE",
+            "lat": 52.5170365,
+            "lon": 13.3888599
+        },
+        {
+            "country": "Ghana",
+            "city": "Accra",
+            "country_code": "GH",
+            "lat": 5.5571096,
+            "lon": -0.2012376
+        },
+        {
+            "country": "Gibraltar",
+            "city": "Gibraltar",
+            "country_code": "GI",
+            "lat": 36.140807,
+            "lon": -5.3541295
+        },
+        {
+            "country": "Greece",
+            "city": "Athens",
+            "country_code": "GR",
+            "lat": 37.9839412,
+            "lon": 23.7283052
+        },
+        {
+            "country": "Greenland",
+            "city": "Nuuk",
+            "country_code": "GL",
+            "lat": 64.175029,
+            "lon": -51.7355386
+        },
+        {
+            "country": "Grenada",
+            "city": "St. George's",
+            "country_code": "GD",
+            "lat": 12.0564,
+            "lon": -61.7485
+        },
+        {
+            "country": "Guam",
+            "city": "Hagåtña",
+            "country_code": "GU",
+            "lat": 13.4833,
+            "lon": 144.7500
+        },
+        {
+            "country": "Guatemala",
+            "city": "Guatemala City",
+            "country_code": "GT",
+            "lat": 14.628434,
+            "lon": -90.522713
+        },
+        {
+            "country": "Guernsey",
+            "city": "St. Peter Port",
+            "country_code": "GG",
+            "lat": 49.4598,
+            "lon": -2.5353
+        },
+        {
+            "country": "Guinea",
+            "city": "Conakry",
+            "country_code": "GN",
+            "lat": 9.5170602,
+            "lon": -13.6998434
+        },
+        {
+            "country": "Guinea_Bissau",
+            "city": "Bissau",
+            "country_code": "GW",
+            "lat": 11.861324,
+            "lon": -15.583055
+        },
+        {
+            "country": "Guyana",
+            "city": "Georgetown",
+            "country_code": "GY",
+            "lat": 6.8137426,
+            "lon": -58.1624465
+        },
+        {
+            "country": "Haiti",
+            "city": "Port_au_Prince",
+            "country_code": "HT",
+            "lat": 18.547327,
+            "lon": -72.3395928
+        },
+        {
+            "country": "Honduras",
+            "city": "Tegucigalpa",
+            "country_code": "HN",
+            "lat": 14.1057433,
+            "lon": -87.2040052
+        },
+        {
+            "country": "Hungary",
+            "city": "Budapest",
+            "country_code": "HU",
+            "lat": 47.4979937,
+            "lon": 19.0403594
+        },
+        {
+            "country": "Iceland",
+            "city": "Reykjavík",
+            "country_code": "IS",
+            "lat": 64.128288,
+            "lon": -21.827774
+        },
+        {
+            "country": "India",
+            "city": "New Delhi",
+            "country_code": "IN",
+            "lat": 28.644800,
+            "lon": 77.216721
+        },
+        {
+            "country": "Indonesia",
+            "city": "Jakarta",
+            "country_code": "ID",
+            "lat": -6.1753942,
+            "lon": 106.827183
+        },
+        {
+            "country": "Iran",
+            "city": "Tehran",
+            "country_code": "IR",
+            "lat": 35.6892523,
+            "lon": 51.3896004
+        },
+        {
+            "country": "Iraq",
+            "city": "Baghdad",
+            "country_code": "IQ",
+            "lat": 33.3061701,
+            "lon": 44.3872213
+        },
+        {
+            "country": "Ireland",
+            "city": "Dublin",
+            "country_code": "IE",
+            "lat": 53.3498006,
+            "lon": -6.2602964
+        },
+        {
+            "country": "Isle of Man",
+            "city": "Douglas",
+            "country_code": "IM",
+            "lat": 54.149774,
+            "lon": -4.4779021
+        },
+        {
+            "country": "Israel",
+            "city": "Jerusalem",
+            "country_code": "IL",
+            "lat": 31.79592425,
+            "lon": 35.21198075969497
+        },
+        {
+            "country": "Italy",
+            "city": "Rome",
+            "country_code": "IT",
+            "lat": 41.8933203,
+            "lon": 12.4829321
+        },
+        {
+            "country": "Jamaica",
+            "city": "Kingston",
+            "country_code": "JM",
+            "lat": 17.9712148,
+            "lon": -76.7928128
+        },
+        {
+            "country": "Japan",
+            "city": "Tokyo",
+            "country_code": "JP",
+            "lat": 35.6828387,
+            "lon": 139.7594549
+        },
+        {
+            "country": "Jersey",
+            "city": "St. Helier",
+            "country_code": "JE",
+            "lat": 49.1880,
+            "lon": -2.1049
+        },
+        {
+            "country": "Jordan",
+            "city": "Amman",
+            "country_code": "JO",
+            "lat": 31.9515694,
+            "lon": 35.9239625
+        },
+        {
+            "country": "Kazakhstan",
+            "city": "Astana",
+            "country_code": "KZ",
+            "lat": 51.1282205,
+            "lon": 71.4306682
+        },
+        {
+            "country": "Kenya",
+            "city": "Nairobi",
+            "country_code": "KE",
+            "lat": -1.30326415,
+            "lon": 36.826384099341595
+        },
+        {
+            "country": "Kiribati",
+            "city": "Tarawa",
+            "country_code": "KI",
+            "lat": 1.3490778,
+            "lon": 173.0386512
+        },
+        {
+            "country": "Kosovo",
+            "city": "Pristina",
+            "country_code": "XK",
+            "lat": 42.6638771,
+            "lon": 21.1640849
+        },
+        {
+            "country": "Kuwait",
+            "city": "Kuwait City",
+            "country_code": "KW",
+            "lat": 29.378586,
+            "lon": 47.990341
+        },
+        {
+            "country": "Kyrgyzstan",
+            "city": "Bishkek",
+            "country_code": "KG",
+            "lat": 42.8765615,
+            "lon": 74.6070079
+        },
+        {
+            "country": "Laos",
+            "city": "Vientiane",
+            "country_code": "LA",
+            "lat": 17.9640988,
+            "lon": 102.6133707
+        },
+        {
+            "country": "Latvia",
+            "city": "Riga",
+            "country_code": "LV",
+            "lat": 56.9493977,
+            "lon": 24.1051846
+        },
+        {
+            "country": "Lebanon",
+            "city": "Beirut",
+            "country_code": "LB",
+            "lat": 33.8959203,
+            "lon": 35.47843
+        },
+        {
+            "country": "Lesotho",
+            "city": "Maseru",
+            "country_code": "LS",
+            "lat": -29.310054,
+            "lon": 27.478222
+        },
+        {
+            "country": "Liberia",
+            "city": "Monrovia",
+            "country_code": "LR",
+            "lat": 6.328034,
+            "lon": -10.797788
+        },
+        {
+            "country": "Libya",
+            "city": "Tripoli",
+            "country_code": "LY",
+            "lat": 32.896672,
+            "lon": 13.1777923
+        },
+        {
+            "country": "Liechtenstein",
+            "city": "Vaduz",
+            "country_code": "LI",
+            "lat": 47.1392862,
+            "lon": 9.5227962
+        },
+        {
+            "country": "Lithuania",
+            "city": "Vilnius",
+            "country_code": "LT",
+            "lat": 54.6870458,
+            "lon": 25.2829111
+        },
+        {
+            "country": "Luxembourg",
+            "city": "Luxembourg",
+            "country_code": "LU",
+            "lat": 49.6112768,
+            "lon": 6.129799
+        },
+        {
+            "country": "Macedonia",
+            "city": "Skopje",
+            "country_code": "MK",
+            "lat": 41.9960924,
+            "lon": 21.4316495
+        },
+        {
+            "country": "Madagascar",
+            "city": "Antananarivo",
+            "country_code": "MG",
+            "lat": -18.9100122,
+            "lon": 47.5255809
+        },
+        {
+            "country": "Malawi",
+            "city": "Lilongwe",
+            "country_code": "MW",
+            "lat": -13.9875107,
+            "lon": 33.768144
+        },
+        {
+            "country": "Malaysia",
+            "city": "Kuala Lumpur",
+            "country_code": "MY",
+            "lat": 3.139003,
+            "lon": 101.686855
+        },
+        {
+            "country": "Maldives",
+            "city": "Malé",
+            "country_code": "MV",
+            "lat": 4.1748,
+            "lon": 73.5089
+        },
+        {
+            "country": "Mali",
+            "city": "Bamako",
+            "country_code": "ML",
+            "lat": 12.649319,
+            "lon": -8.000337
+        },
+        {
+            "country": "Malta",
+            "city": "Valletta",
+            "country_code": "MT",
+            "lat": 35.8989818,
+            "lon": 14.5136759
+        },
+        {
+            "country": "Marshall Islands",
+            "city": "Majuro",
+            "country_code": "MH",
+            "lat": 7.0909924,
+            "lon": 171.3816354
+        },
+        {
+            "country": "Mauritania",
+            "city": "Nouakchott",
+            "country_code": "MR",
+            "lat": 18.0792379,
+            "lon": -15.9780071
+        },
+        {
+            "country": "Mauritius",
+            "city": "Port Louis",
+            "country_code": "MU",
+            "lat": -20.1667,
+            "lon": 57.5000
+        },
+        {
+            "country": "Mexico",
+            "city": "Mexico City",
+            "country_code": "MX",
+            "lat": 19.432608,
+            "lon": -99.133209
+        },
+        {
+            "country": "Moldova",
+            "city": "Chisinau",
+            "country_code": "MD",
+            "lat": 47.0245117,
+            "lon": 28.8322923
+        },
+        {
+            "country": "Monaco",
+            "city": "Monaco",
+            "country_code": "MC",
+            "lat": 43.7311424,
+            "lon": 7.4197576
+        },
+        {
+            "country": "Mongolia",
+            "city": "Ulaanbaatar",
+            "country_code": "MN",
+            "lat": 47.9184676,
+            "lon": 106.9177016
+        },
+        {
+            "country": "Montenegro",
+            "city": "Podgorica",
+            "country_code": "ME",
+            "lat": 42.4415238,
+            "lon": 19.2621081
+        },
+        {
+            "country": "Montserrat",
+            "city": "Plymouth",
+            "country_code": "MS",
+            "lat": 16.7064,
+            "lon": -62.2158
+        },
+        {
+            "country": "Morocco",
+            "city": "Rabat",
+            "country_code": "MA",
+            "lat": 34.022405,
+            "lon": -6.834543
+        },
+        {
+            "country": "Mozambique",
+            "city": "Maputo",
+            "country_code": "MZ",
+            "lat": -25.966213,
+            "lon": 32.56745
+        },
+        {
+            "country": "Myanmar",
+            "city": "Naypyidaw",
+            "country_code": "MM",
+            "lat": 19.7540045,
+            "lon": 96.1344976
+        },
+        {
+            "country": "Namibia",
+            "city": "Windhoek",
+            "country_code": "NA",
+            "lat": -22.5776104,
+            "lon": 17.0772739
+        },
+        {
+            "country": "Nauru",
+            "city": "Yaren",
+            "country_code": "NR",
+            "lat": -0.5471014,
+            "lon": 166.9164002
+        },
+        {
+            "country": "Nepal",
+            "city": "Kathmandu",
+            "country_code": "NP",
+            "lat": 27.708317,
+            "lon": 85.3205817
+        },
+        {
+            "country": "Netherlands",
+            "city": "Amsterdam",
+            "country_code": "NL",
+            "lat": 52.3727598,
+            "lon": 4.8936041
+        },
+        {
+            "country": "New Caledonia",
+            "city": "Nouméa",
+            "country_code": "NC",
+            "lat": -22.275801,
+            "lon": 166.457993
+        },
+        {
+            "country": "New Zealand",
+            "city": "Wellington",
+            "country_code": "NZ",
+            "lat": -41.2887953,
+            "lon": 174.7772114
+        },
+        {
+            "country": "Nicaragua",
+            "city": "Managua",
+            "country_code": "NI",
+            "lat": 12.1544035,
+            "lon": -86.2737642
+        },
+        {
+            "country": "Niger",
+            "city": "Niamey",
+            "country_code": "NE",
+            "lat": 13.524834,
+            "lon": 2.109823
+        },
+        {
+            "country": "Nigeria",
+            "city": "Abuja",
+            "country_code": "NG",
+            "lat": 9.0643305,
+            "lon": 7.4892974
+        },
+        {
+            "country": "Niue",
+            "city": "Alofi",
+            "country_code": "NU",
+            "lat": -19.0534159,
+            "lon": -169.919199
+        },
+        {
+            "country": "Norfolk Island",
+            "city": "Kingston",
+            "country_code": "NF",
+            "lat": -29.0500,
+            "lon": 167.9666
+        },
+        {
+            "country": "North Korea",
+            "city": "Pyongyang",
+            "country_code": "KP",
+            "lat": 39.0167979,
+            "lon": 125.7473609
+        },
+        {
+            "country": "Northern Cyprus",
+            "city": "Nicosia",
+            "country_code": "CY",
+            "lat": 35.1748976,
+            "lon": 33.3638568
+        },
+        {
+            "country": "Northern Mariana Islands",
+            "city": "Saipan",
+            "country_code": "MP",
+            "lat": 15.183333,
+            "lon": 145.750000
+        },
+        {
+            "country": "Norway",
+            "city": "Oslo",
+            "country_code": "NO",
+            "lat": 59.9133301,
+            "lon": 10.7389701
+        },
+        {
+            "country": "Oman",
+            "city": "Muscat",
+            "country_code": "OM",
+            "lat": 23.61515,
+            "lon": 58.5912467
+        },
+        {
+            "country": "Pakistan",
+            "city": "Islamabad",
+            "country_code": "PK",
+            "lat": 33.6938118,
+            "lon": 73.0651511
+        },
+        {
+            "country": "Palau",
+            "city": "Ngerulmud",
+            "country_code": "PW",
+            "lat": 7.5006446,
+            "lon": 134.6242864
+        },
+        {
+            "country": "Palestine",
+            "city": "Jerusalem",
+            "country_code": "PS",
+            "lat": 31.7833,
+            "lon": 35.2167
+        },
+        {
+            "country": "Panama",
+            "city": "Panama City",
+            "country_code": "PA",
+            "lat": 8.983333,
+            "lon": -79.516670
+        },
+        {
+            "country": "Papua New Guinea",
+            "city": "Port Moresby",
+            "country_code": "PG",
+            "lat": -9.4431,
+            "lon": 147.1797
+        },
+        {
+            "country": "Paraguay",
+            "city": "Asunciôn",
+            "country_code": "PY",
+            "lat": -25.3007,
+            "lon": -57.6359
+        },
+        {
+            "country": "Peru",
+            "city": "Lima",
+            "country_code": "PE",
+            "lat": -12.0621065,
+            "lon": -77.0365256
+        },
+        {
+            "country": "Philippines",
+            "city": "Manila",
+            "country_code": "PH",
+            "lat": 14.5948914,
+            "lon": 120.9782618
+        },
+        {
+            "country": "Pitcairn Islands",
+            "city": "Adamstown",
+            "country_code": "PN",
+            "lat": -25.066667,
+            "lon": -130.100205
+        },
+        {
+            "country": "Poland",
+            "city": "Warsaw",
+            "country_code": "PL",
+            "lat": 52.2319581,
+            "lon": 21.0067249
+        },
+        {
+            "country": "Portugal",
+            "city": "Lisbon",
+            "country_code": "PT",
+            "lat": 38.7077507,
+            "lon": -9.1365919
+        },
+        {
+            "country": "Puerto Rico",
+            "city": "San Juan",
+            "country_code": "PR",
+            "lat": 18.466333,
+            "lon": -66.105721
+        },
+        {
+            "country": "Qatar",
+            "city": "Doha",
+            "country_code": "QA",
+            "lat": 25.2856329,
+            "lon": 51.5264162
+        },
+        {
+            "country": "Republic of the Congo",
+            "city": "Brazzaville",
+            "country_code": "CG",
+            "lat": -4.2694407,
+            "lon": 15.2712256
+        },
+        {
+            "country": "Romania",
+            "city": "Bucharest",
+            "country_code": "RO",
+            "lat": 44.4361414,
+            "lon": 26.1027202
+        },
+        {
+            "country": "Russia",
+            "city": "Moscow",
+            "country_code": "RU",
+            "lat": 55.7504461,
+            "lon": 37.6174943
+        },
+        {
+            "country": "Rwanda",
+            "city": "Kigali",
+            "country_code": "RW",
+            "lat": -1.950851,
+            "lon": 30.061507
+        },
+        {
+            "country": "Saint Barthélemy",
+            "city": "Gustavia",
+            "country_code": "BL",
+            "lat": 17.8962,
+            "lon": -62.8498
+        },
+        {
+            "country": "Saint Helena",
+            "city": "Jamestown",
+            "country_code": "SH",
+            "lat": -15.9277296,
+            "lon": -5.7160872
+        },
+        {
+            "country": "Saint Kitts and Nevis",
+            "city": "Basseterre",
+            "country_code": "KN",
+            "lat": 17.2960919,
+            "lon": -62.722301
+        },
+        {
+            "country": "Saint Lucia",
+            "city": "Castries",
+            "country_code": "LC",
+            "lat": 14.0095966,
+            "lon": -60.9902359
+        },
+        {
+            "country": "Saint Martin",
+            "city": "Marigot",
+            "country_code": "MF",
+            "lat": 18.073099,
+            "lon": -63.082199
+        },
+        {
+            "country": "Saint Pierre and Miquelon",
+            "city": "St. Pierre",
+            "country_code": "PM",
+            "lat": 46.9467,
+            "lon": -56.2623
+        },
+        {
+            "country": "Saint Vincent and the Grenadines",
+            "city": "Kingstown",
+            "country_code": "VC",
+            "lat": 13.1561864,
+            "lon": -61.2279621
+        },
+        {
+            "country": "Samoa",
+            "city": "Apia",
+            "country_code": "WS",
+            "lat": -13.8343691,
+            "lon": -171.7692793
+        },
+        {
+            "country": "San Marino",
+            "city": "San Marino",
+            "country_code": "SM",
+            "lat": 43.9428779,
+            "lon": 12.4600933
+        },
+        {
+            "country": "Saudi Arabia",
+            "city": "Riyadh",
+            "country_code": "SA",
+            "lat": 24.638916,
+            "lon": 46.7160104
+        },
+        {
+            "country": "Senegal",
+            "city": "Dakar",
+            "country_code": "SN",
+            "lat": 14.693425,
+            "lon": -17.447938
+        },
+        {
+            "country": "Serbia",
+            "city": "Belgrade",
+            "country_code": "RS",
+            "lat": 44.8178131,
+            "lon": 20.4568974
+        },
+        {
+            "country": "Seychelles",
+            "city": "Victoria",
+            "country_code": "SC",
+            "lat": -4.6232085,
+            "lon": 55.452359
+        },
+        {
+            "country": "Sierra Leone",
+            "city": "Freetown",
+            "country_code": "SL",
+            "lat": 8.479004,
+            "lon": -13.26795
+        },
+        {
+            "country": "Singapore",
+            "city": "Singapore",
+            "country_code": "SG",
+            "lat": 1.2899175,
+            "lon": 103.8519072
+        },
+        {
+            "country": "Sint Maarten",
+            "city": "Philipsburg",
+            "country_code": "SX",
+            "lat": 18.0237,
+            "lon": -63.0458
+        },
+        {
+            "country": "Slovakia",
+            "city": "Bratislava",
+            "country_code": "SK",
+            "lat": 48.1516988,
+            "lon": 17.1093063
+        },
+        {
+            "country": "Slovenia",
+            "city": "Ljubljana",
+            "country_code": "SI",
+            "lat": 46.0500268,
+            "lon": 14.5069289
+        },
+        {
+            "country": "Solomon Islands",
+            "city": "Honiara",
+            "country_code": "SB",
+            "lat": -9.4310769,
+            "lon": 159.9552552
+        },
+        {
+            "country": "Somalia",
+            "city": "Mogadishu",
+            "country_code": "SO",
+            "lat": 2.0349312,
+            "lon": 45.3419183
+        },
+        {
+            "country": "South Africa",
+            "city": "Pretoria",
+            "country_code": "ZA",
+            "lat": -25.7459277,
+            "lon": 28.1879101
+        },
+        {
+            "country": "South Georgia and the South Sandwich Islands",
+            "city": "Grytviken",
+            "country_code": "GS",
+            "lat": -54.2806481,
+            "lon": -36.5098
+        },
+        {
+            "country": "South Korea",
+            "city": "Seoul",
+            "country_code": "KR",
+            "lat": 37.5666791,
+            "lon": 126.9782914
+        },
+        {
+            "country": "South Sudan",
+            "city": "Juba",
+            "country_code": "SS",
+            "lat": 4.8459246,
+            "lon": 31.5959173
+        },
+        {
+            "country": "Spain",
+            "city": "Madrid",
+            "country_code": "ES",
+            "lat": 40.4167047,
+            "lon": -3.7035825
+        },
+        {
+            "country": "Sri Lanka",
+            "city": "Sri Jayawardenapura Kotte",
+            "country_code": "LK",
+            "lat": 6.894070,
+            "lon": 79.902481
+        },
+        {
+            "country": "Sudan",
+            "city": "Khartoum",
+            "country_code": "SD",
+            "lat": 15.5635972,
+            "lon": 32.5349123
+        },
+        {
+            "country": "Suriname",
+            "city": "Paramaribo",
+            "country_code": "SR",
+            "lat": 5.8247628,
+            "lon": -55.1703941
+        },
+        {
+            "country": "Swaziland",
+            "city": "Mbabane",
+            "country_code": "SZ",
+            "lat": -26.325745,
+            "lon": 31.144663
+        },
+        {
+            "country": "Sweden",
+            "city": "Stockholm",
+            "country_code": "SE",
+            "lat": 59.3251172,
+            "lon": 18.0710935
+        },
+        {
+            "country": "Switzerland",
+            "city": "Bern",
+            "country_code": "CH",
+            "lat": 46.9482713,
+            "lon": 7.4514512
+        },
+        {
+            "country": "Syria",
+            "city": "Damascus",
+            "country_code": "SY",
+            "lat": 33.5130695,
+            "lon": 36.3095814
+        },
+        {
+            "country": "São Tomé and Príncipe",
+            "city": "São Tomé",
+            "country_code": "ST",
+            "lat": 0.255436,
+            "lon": 6.602781
+        },
+        {
+            "country": "Tajikistan",
+            "city": "Dushanbe",
+            "country_code": "TJ",
+            "lat": 38.5425835,
+            "lon": 68.81521423589763
+        },
+        {
+            "country": "Tanzania",
+            "city": "Dodoma",
+            "country_code": "TZ",
+            "lat": -6.1791181,
+            "lon": 35.7468174
+        },
+        {
+            "country": "Thailand",
+            "city": "Bangkok",
+            "country_code": "TH",
+            "lat": 13.7524938,
+            "lon": 100.4935089
+        },
+        {
+            "country": "Togo",
+            "city": "Lomé",
+            "country_code": "TG",
+            "lat": 6.136629,
+            "lon": 1.222186
+        },
+        {
+            "country": "Tonga",
+            "city": "Nuku'alofa",
+            "country_code": "TO",
+            "lat": -21.1343401,
+            "lon": -175.201808
+        },
+        {
+            "country": "Trinidad and Tobago",
+            "city": "Port of Spain",
+            "country_code": "TT",
+            "lat": 10.671067,
+            "lon": -61.521206
+        },
+        {
+            "country": "Tristan da Cunha",
+            "city": "Edinburgh of the Seven Seas",
+            "country_code": "SH",
+            "lat": -37.0667,
+            "lon": -12.3167
+        },
+        {
+            "country": "Tunisia",
+            "city": "Tunis",
+            "country_code": "TN",
+            "lat": 36.8002068,
+            "lon": 10.1857757
+        },
+        {
+            "country": "Turkey",
+            "city": "Ankara",
+            "country_code": "TR",
+            "lat": 39.9207886,
+            "lon": 32.8540482
+        },
+        {
+            "country": "Turkmenistan",
+            "city": "Ashgabat",
+            "country_code": "TM",
+            "lat": 37.9404648,
+            "lon": 58.3823487
+        },
+        {
+            "country": "Turks and Caicos Islands",
+            "city": "Cockburn Town",
+            "country_code": "TC",
+            "lat": 21.4612,
+            "lon": -71.1419
+        },
+        {
+            "country": "Tuvalu",
+            "city": "Funafuti",
+            "country_code": "TV",
+            "lat": -8.5199633,
+            "lon": 179.1982548
+        },
+        {
+            "country": "Uganda",
+            "city": "Kampala",
+            "country_code": "UG",
+            "lat": 0.3177137,
+            "lon": 32.5813539
+        },
+        {
+            "country": "Ukraine",
+            "city": "Kiev",
+            "country_code": "UA",
+            "lat": 50.4500336,
+            "lon": 30.5241361
+        },
+        {
+            "country": "United Arab Emirates",
+            "city": "Abu Dhabi",
+            "country_code": "AE",
+            "lat": 24.466667,
+            "lon": 54.366669
+        },
+        {
+            "country": "United Kingdom",
+            "city": "London",
+            "country_code": "GB",
+            "lat": 51.5073219,
+            "lon": -0.1276474
+        },
+        {
+            "country": "United States",
+            "city": "Washington, D.C.",
+            "country_code": "US",
+            "lat": 38.8951,
+            "lon": -77.0364
+        },
+        {
+            "country": "United States Virgin Islands",
+            "city": "Charlotte Amalie",
+            "country_code": "VI",
+            "lat": 18.3419,
+            "lon": -64.930701
+        },
+        {
+            "country": "Uruguay",
+            "city": "Montevideo",
+            "country_code": "UY",
+            "lat": -34.9058916,
+            "lon": -56.1913095
+        },
+        {
+            "country": "Uzbekistan",
+            "city": "Tashkent",
+            "country_code": "UZ",
+            "lat": 41.3123363,
+            "lon": 69.2787079
+        },
+        {
+            "country": "Vanuatu",
+            "city": "Port Vila",
+            "country_code": "VU",
+            "lat": -17.734818,
+            "lon": 168.322021
+        },
+        {
+            "country": "Vatican City",
+            "city": "Vatican City",
+            "country_code": "VA",
+            "lat": 41.90236,
+            "lon": 12.45332
+        },
+        {
+            "country": "Venezuela",
+            "city": "Caracas",
+            "country_code": "VE",
+            "lat": 10.5060934,
+            "lon": -66.9146008
+        },
+        {
+            "country": "Vietnam",
+            "city": "Hanoi",
+            "country_code": "VN",
+            "lat": 21.0294498,
+            "lon": 105.8544441
+        },
+        {
+            "country": "Wallis and Futuna",
+            "city": "Mata_Utu",
+            "country_code": "WF",
+            "lat": -13.2833,
+            "lon": -176.1833
+        },
+        {
+            "country": "Western Sahara",
+            "city": "El Aaiún",
+            "country_code": "EH",
+            "lat": 27.1536111111,
+            "lon": -13.2033333333
+        },
+        {
+            "country": "Yemen",
+            "city": "Sanaá",
+            "country_code": "YE",
+            "lat": -15.4164124,
+            "lon": 28.2824793
+        },
+        {
+            "country": "Zambia",
+            "city": "Lusaka",
+            "country_code": "ZM",
+            "lat": 15.369445,
+            "lon": 44.191006
+        },
+        {
+            "country": "Zimbabwe",
+            "city": "Harare",
+            "country_code": "ZW",
+            "lat": -17.831773,
+            "lon": 31.045686
+        }
+    ]
+}

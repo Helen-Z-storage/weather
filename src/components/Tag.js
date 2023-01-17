@@ -2,6 +2,10 @@ import React from 'react';
 import '../css/Tag.css';
 const tag_spliter = " ";
 
+import { connect } from "react-redux";
+import * as uiActions from "./redux/actions/uiActions";
+import * as pageActions from "./redux/actions/pageActions";
+
 function Tag(props) {
     const {tags, handleFilter, setNewWeather} = props;
 
@@ -17,4 +21,10 @@ function Tag(props) {
     );
 }
 
-export default Tag;
+export default connect (
+    (state) => {
+      return {
+        ui: state.ui,
+        posts: state.posts
+      }
+    })(Tag);

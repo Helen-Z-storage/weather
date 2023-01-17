@@ -1,6 +1,10 @@
 import React from 'react';
 import '../css/WeatherData.css';
 
+import { connect } from "react-redux";
+import * as uiActions from "./redux/actions/uiActions";
+import * as pageActions from "./redux/actions/pageActions";
+
 function WeatherData(props) {
     const {city, city_name, avg} = props;
 
@@ -22,4 +26,10 @@ function WeatherData(props) {
     );
 }
 
-export default WeatherData;
+export default connect (
+    (state) => {
+      return {
+        ui: state.ui,
+        posts: state.posts
+      }
+    })(WeatherData);
