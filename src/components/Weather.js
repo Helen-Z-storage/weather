@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../css/Weather.css';
 import WeatherData from './WeatherData';
 import Expand from './Expand';
 import Tag from './Tag';
-import weatherList from "../data/weather.json";
 const fileSystem = require("browserify-fs");
 
 const tag_spliter = ",";
@@ -42,9 +41,8 @@ const addNewTag = (filter, keyCode, new_tags) => {
 }
 
 function Weather(props) {
-    const {id, expand, cityFilter, countryFilter, tagFilter, 
+    const {id, expand, weatherList, cityFilter, countryFilter, tagFilter, 
         handleExpand, handleFilter} = props;
-
     const setNewCity = tagEvent => {
         const newWeatherList = weatherList.map(
             (weather, i) => {
@@ -59,8 +57,9 @@ function Weather(props) {
                 }
                 return weather;
             })
+        
         const data = JSON.stringify(newWeatherList);
-        console.log(data);
+        
         fileSystem.writeFile("weather.json", data, err=>{
             if(err){
                 console.log("Error writing file" ,err)
@@ -93,9 +92,10 @@ function Weather(props) {
     
     let currCity, removeByCity, removeByCountry, removeByTag, disp;
     currCity = weatherList[id];
-    removeByCity = currCity.city.indexOf(cityFilter) === -1;
-    removeByCountry = currCity.country.indexOf(countryFilter) === -1;
-    removeByTag = currCity.tags.indexOf(tagFilter) === -1;
+    removeByCity = currCity.city.toUpperCase().indexOf(cityFilter) === -1;
+    removeByCountry = currCity.country.toUpperCase().indexOf(countryFilter) === -1;
+    removeByTag = currCity.tags.toUpperCase().indexOf(tagFilter) === -1;
+    console.log(cityFilter, countryFilter, tagFilter);
 
     disp = (removeByCity || removeByCountry || removeByTag)? {display:"none"}: {};
 

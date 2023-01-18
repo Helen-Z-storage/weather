@@ -46,7 +46,7 @@ class WeatherList extends React.Component{
         let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
 
         const cityList = groupExpand.map((expand, i) => {
-            return <Weather key={i} id={i} expand={expand}
+            return <Weather key={i} id={i} expand={expand} weatherList={weatherList}
             cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
             handleExpand={exp_id => this.handleExpand(exp_id)}
             handleFilter={(e) => this.handleFilter(e)} />;

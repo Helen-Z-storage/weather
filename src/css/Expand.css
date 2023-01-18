@@ -3,6 +3,12 @@
     margin: 0.5em 0px;
   }
 
+.expand_img {
+  width: 3em;
+  border-radius: 50%;
+  border: 1px solid #DCDCDC;
+}
+  
 .expand {
   position: absolute;
   background-color: white;

@@ -7,7 +7,7 @@ function WeatherData(props) {
     return (
         <tr>
             <td>
-                <img alt={`${currCity.city} weather icon`} src={currCity.icon} />
+                <img className='curr_weather' alt={`${currCity.city} weather icon`} src={currCity.icon} />
             </td>
             <td>
                 <ul className='data_space'>
