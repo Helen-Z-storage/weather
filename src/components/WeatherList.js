@@ -3,37 +3,71 @@ import '../css/WeatherList.css';
 import Weather from './Weather';
 import Filter from './Filter';
 
-import { connect } from "react-redux";
-import * as uiActions from "../redux/actions/uiActions";
-import * as pageActions from "../redux/actions/pageActions";
-
-function WeatherList(props) {
-    const groupExpand = props.ui.get("groupExpand");
-
-    const city_lst = groupExpand.map((_, i) => {
-        return <Weather key={i} store={props} cityID={i}/>;
-    })   
+class WeatherList extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            cityFilter: "",
+            countryFilter: "",
+            tagFilter: "",
+            groupExpand: new Array(this.props.weatherList.length).fill(false)
+        };
+    }
     
-    return (
-        <table id="context_box">
-            <tbody>
-                <tr>
-                    <Filter store={props}/>
-                </tr>
-                <tr>
-                    <td>
-                        <ul id="lst_table">{city_lst}</ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    );
-  }
+    handleFilter(event) {
+        // handle name's text filter
+        let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
+        
+        if (event.target.id === "cityFilter") {
+            cityFilter = event.target.value.toUpperCase();
+        }
+        if (event.target.id === "countryFilter") {
+            countryFilter = event.target.value.toUpperCase();
+        }
+        if (event.target.id === "tagFilter") {
+            tagFilter = event.target.value.toUpperCase();
+        }
+        // handle tag's button filter
+        if (event.target.type === "submit") {
+            tagFilter = event.target.innerHTML;
+        }
+        this.setState({cityFilter, countryFilter, tagFilter, groupExpand});
+    }
+    
+    handleExpand(exp_id) {
+        let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
+        groupExpand[exp_id] = !groupExpand[exp_id] 
+        this.setState({cityFilter, countryFilter, tagFilter, groupExpand});
+    }
 
-export default connect (
-    (state) => {
-      return {
-        ui: state.ui,
-        weather: state.weather
-      }
-    })(WeatherList);
+    render(){
+        // handle whether current student should expand
+        let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
+        console.log(this.props.weatherList);
+
+        const cityList = groupExpand.map((expand, i) => {
+            return <Weather key={i} id={i} weatherList={this.props.weatherList} expand={expand}
+            cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
+            handleExpand={exp_id => this.handleExpand(exp_id)}
+            handleFilter={(e) => this.handleFilter(e)}
+            setWeatherList={this.props.setWeatherList}/>;
+        })   
+        
+        return (
+            <table id="context_box">
+                <tbody>
+                    <tr>
+                    <Filter handleFilter={(e) => this.handleFilter(e)}/>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="lst_table">{cityList}</ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        );
+    }
+}
+
+export default WeatherList;

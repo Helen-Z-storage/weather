@@ -1,77 +1,85 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../css/Weather.css';
 import WeatherData from './WeatherData';
 import Expand from './Expand';
 import Tag from './Tag';
 
-import { connect } from "react-redux";
-import * as pageActions from "../redux/actions/pageActions";
-
-
 const tag_spliter = " ";
-const defaultCity = {
-    id: -1,
-    country: tag_spliter,
-    city: tag_spliter,
-    lat: 0.0,
-    lon: 0.0,
-    tags: tag_spliter,
-    icon: "",
-    avg_forecast: {
-        timestamp: "",
-        temp: 0.00,
-        feels_like: 0.00,
-        temp_min: 0.00,
-        temp_max: 0.00,
-        icon: ""
-    },
-    detail_forecast: new Array(8).fill({
-        timestamp: "", 
-        temp: 0.00,
-        feels_like: 0.00,
-        temp_min: 0.00,
-        temp_max: 0.00,
-        icon: "",
-    })
-};
+// adding valid tags in localStorage's current student data
+const addNewTag = (filter, keyCode, new_tags) => {
+    var clear = false;
+
+    // handle case of tag_spliter exist in input value
+    if (filter.indexOf(tag_spliter) > -1) {
+        alert(`No "${tag_spliter}" should include in Tag`);
+        clear = true;
+    }
+
+    // handle case of invalid empty tag
+    else if (keyCode === 13 && filter === "") {
+        alert(`No empty tag should been add`);
+        clear = true;
+    }
+
+    // saving tag iff press "enter"
+    else if (keyCode === 13) {
+
+        var tag = filter + tag_spliter;
+
+        // Add new tag if tag is not store in current student
+        if (new_tags.indexOf(tag_spliter + tag) === -1) {
+            new_tags += (tag);
+        } else {
+            // handle case of duplicate tag
+            alert(`No duplicate tag should been add`);
+        }
+        // clear text input field
+        clear = true;
+    }
+    return [clear, new_tags];
+}
 
 function Weather(props) {
-    
-  useEffect(() => {
-    props.dispatch(pageActions.pageLoadWeather());
-  }, []);
-    const {cityID} = props;
-    const cityFilter = props.ui.get("cityFilter");
-    const countryFilter = props.ui.get("countryFilter");
-    const tagFilter = props.ui.get("tagFilter");
-    const city = props.weather.getIn("weather.captials".split("."))[cityID];
-    let disp = {};
-    /*
-    if (!city || Object.keys(city).length === 0) {
-        city = defaultCity;
-    }
-    */
+    const {id, weatherList, expand, cityFilter, countryFilter, tagFilter, 
+        handleExpand, handleFilter, setWeatherList} = props;
 
-    // check whether current city is not filter by city_filter or tag_filter
-    if (city && Object.keys(city).length !== 0) {
-        console.log(city);
-        const remove_by_city = city.city.indexOf(cityFilter) === -1;
-        const remove_by_country = city.country.indexOf(countryFilter) === -1;
-        const remove_by_tag = city.tags.indexOf(tagFilter) === -1;
-        disp = (remove_by_city || remove_by_country || remove_by_tag) 
-            ? {display:"none"}: {};
+    const setNewCity = tagEvent => {
+        setWeatherList(weatherList.map(
+            (weather, i) => {
+                if (id === i){
+                    const [clear, new_tags] = addNewTag(tagEvent.target.value, tagEvent.nativeEvent.keyCode, weather.tags);
+                    if (clear) {
+                        const newWeather = {...weather};
+                        tagEvent.target.value = "";
+                        newWeather.tags = new_tags;
+                        return newWeather
+                    }
+                }
+                return weather;
+            })
+        )
     }
+    
+    let currCity, removeByCity, removeByCountry, removeByTag, disp;
+    currCity = weatherList[id];
+    removeByCity = currCity.name.indexOf(cityFilter) === -1;
+    removeByCountry = currCity.country.indexOf(countryFilter) === -1;
+    removeByTag = currCity.tag.indexOf(tagFilter) === -1;
+
+    disp = (removeByCity || removeByCountry || removeByTag)? {display:"none"}: {};
 
     return (
         <li className="single_city" style={disp}>
             <table>
                 <tbody>
-                    <WeatherData cityID={cityID} store={props}/>
+                    <WeatherData currCity={currCity}/>
                     <tr>
                         <td></td>
                         <td>
-                            <Expand cityID={cityID} store={props}/>
-                            <Tag cityID={cityID} store={props}/>
+                            <Expand id={id} currCity={currCity}
+                                expand={expand} handleExpand={handleExpand} />
+                            <Tag tags={setNewCity.tags} handleFilter={handleFilter}
+                                setNewCity={setNewCity}/>
                         </td>
                     </tr>
                 </tbody>
@@ -80,11 +88,5 @@ function Weather(props) {
     );
 }
 
-export default connect (
-    (state) => {
-      return {
-        ui: state.ui,
-        weather: state.weather
-      }
-    })(Weather);
+export default Weather;
 
