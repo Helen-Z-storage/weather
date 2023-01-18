@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/WeatherList.css';
 import Weather from './Weather';
 import Filter from './Filter';
+import weatherList from "../data/weather.json";
 
 class WeatherList extends React.Component{
     constructor(props){
@@ -10,7 +11,7 @@ class WeatherList extends React.Component{
             cityFilter: "",
             countryFilter: "",
             tagFilter: "",
-            groupExpand: new Array(this.props.weatherList.length).fill(false)
+            groupExpand: new Array(weatherList.length).fill(false)
         };
     }
     
@@ -43,14 +44,19 @@ class WeatherList extends React.Component{
     render(){
         // handle whether current student should expand
         let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
-        console.log(this.props.weatherList);
 
         const cityList = groupExpand.map((expand, i) => {
+            return <Weather key={i} id={i} expand={expand}
+            cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
+            handleExpand={exp_id => this.handleExpand(exp_id)}
+            handleFilter={(e) => this.handleFilter(e)} />;
+            /*
             return <Weather key={i} id={i} weatherList={this.props.weatherList} expand={expand}
             cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
             handleExpand={exp_id => this.handleExpand(exp_id)}
             handleFilter={(e) => this.handleFilter(e)}
             setWeatherList={this.props.setWeatherList}/>;
+            */
         })   
         
         return (

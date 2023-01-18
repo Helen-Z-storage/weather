@@ -3,8 +3,10 @@ import '../css/Weather.css';
 import WeatherData from './WeatherData';
 import Expand from './Expand';
 import Tag from './Tag';
+import weatherList from "../data/weather.json";
+const fileSystem = require("browserify-fs");
 
-const tag_spliter = " ";
+const tag_spliter = ",";
 // adding valid tags in localStorage's current student data
 const addNewTag = (filter, keyCode, new_tags) => {
     var clear = false;
@@ -40,6 +42,34 @@ const addNewTag = (filter, keyCode, new_tags) => {
 }
 
 function Weather(props) {
+    const {id, expand, cityFilter, countryFilter, tagFilter, 
+        handleExpand, handleFilter} = props;
+
+    const setNewCity = tagEvent => {
+        const newWeatherList = weatherList.map(
+            (weather, i) => {
+                if (id === i){
+                    const [clear, new_tags] = addNewTag(tagEvent.target.value, tagEvent.nativeEvent.keyCode, weather.tags);
+                    if (clear) {
+                        const newWeather = {...weather};
+                        tagEvent.target.value = "";
+                        newWeather.tags = new_tags;
+                        return newWeather
+                    }
+                }
+                return weather;
+            })
+        const data = JSON.stringify(newWeatherList);
+        console.log(data);
+        fileSystem.writeFile("weather.json", data, err=>{
+            if(err){
+                console.log("Error writing file" ,err)
+            } else {
+                console.log('JSON data is written to the file successfully')
+            }
+        });
+    }
+    /*
     const {id, weatherList, expand, cityFilter, countryFilter, tagFilter, 
         handleExpand, handleFilter, setWeatherList} = props;
 
@@ -59,12 +89,13 @@ function Weather(props) {
             })
         )
     }
+    */
     
     let currCity, removeByCity, removeByCountry, removeByTag, disp;
     currCity = weatherList[id];
-    removeByCity = currCity.name.indexOf(cityFilter) === -1;
+    removeByCity = currCity.city.indexOf(cityFilter) === -1;
     removeByCountry = currCity.country.indexOf(countryFilter) === -1;
-    removeByTag = currCity.tag.indexOf(tagFilter) === -1;
+    removeByTag = currCity.tags.indexOf(tagFilter) === -1;
 
     disp = (removeByCity || removeByCountry || removeByTag)? {display:"none"}: {};
 
@@ -78,7 +109,7 @@ function Weather(props) {
                         <td>
                             <Expand id={id} currCity={currCity}
                                 expand={expand} handleExpand={handleExpand} />
-                            <Tag tags={setNewCity.tags} handleFilter={handleFilter}
+                            <Tag tags={currCity.tags} handleFilter={handleFilter}
                                 setNewCity={setNewCity}/>
                         </td>
                     </tr>

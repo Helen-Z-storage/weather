@@ -3,7 +3,7 @@ import '../css/Expand.css';
 
 
 function Expand(props) {
-  const [id, currCity, expand, handleExpand] = props;
+  const {id, currCity, expand, handleExpand} = props;
 
 
     
@@ -18,14 +18,16 @@ function Expand(props) {
       (weatherObj, i) => 
         <li key={"weather_" + i}>
           <table>
-            <tr>
-              <td>{`${weatherObj.timestamp}:`}</td>
-              <td>{weatherObj.icon}</td>
-              <td>{`${weatherObj.temp} C`}</td>
-              <td>{`${weatherObj.feels_like} C`}</td>
-              <td>{`${weatherObj.temp_min} C`}</td>
-              <td>{`${weatherObj.temp_max} C`}</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>{`${weatherObj.timestamp}:`}</td>
+                <td><img alt={`${currCity.city} ${weatherObj.timestamp} weather icon`} src={weatherObj.icon} /></td>
+                <td>{`${weatherObj.temp} C`}</td>
+                <td>{`${weatherObj.feels_like} C`}</td>
+                <td>{`${weatherObj.temp_min} C`}</td>
+                <td>{`${weatherObj.temp_max} C`}</td>
+              </tr>
+            </tbody>
           </table>
           </li>);
 
@@ -35,7 +37,7 @@ function Expand(props) {
               <tbody>
                 <tr>
                   <td>{`${currWeather.timestamp}:`}</td>
-                  <td>{currWeather.icon}</td>
+                  <td><img alt={`${currCity.city} ${currWeather.timestamp} weather icon`} src={currWeather.icon} /></td>
                   <td>{`${currWeather.temp} C`}</td>
                   <td>{`${currWeather.feels_like} C`}</td>
                   <td>{`${currWeather.temp_min} C`}</td>

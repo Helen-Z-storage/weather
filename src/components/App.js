@@ -1,18 +1,26 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import WeatherList from './WeatherList';
 
 
 
+function App() {
+  return (
+      <WeatherList />
+  );
+}
+
+/*
+import React, {useState, useEffect} from 'react';
 import capitalJSON from "../data/capital.json";
 
 const tag_spliter = " ";
 const API_key = "87391d7ad955bd47f528c419e1b7519d";
 const icon_img = (icon) => `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
-
 function App() {
   let fetchedWeatherList = [];
 
+  
   useEffect(() => {
     // componentWillMount
     
@@ -68,5 +76,5 @@ function App() {
         <WeatherList weatherList={weatherList} setWeatherList={setWeatherList}/>
     );
 }
-
+*/
 export default App;

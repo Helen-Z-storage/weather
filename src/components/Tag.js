@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Tag.css';
 
-const tag_spliter = " ";
+const tag_spliter = ",";
 
 function Tag(props) {
   const {tags, handleFilter, setNewCity} = props;
