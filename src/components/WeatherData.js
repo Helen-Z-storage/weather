@@ -32,8 +32,12 @@ const defaultCity = {
 
 function WeatherData(props) {
     const {cityID} = props;
-    const city = props.weather.getIn("weather.captials".split("."))[cityID] || defaultCity;
-
+    let city = props.weather.getIn("weather.captials".split("."))[cityID];
+    
+    if (!city || Object.keys(city).length === 0) {
+        city = defaultCity;
+    }
+    
     return (
         <tr>
             <td>

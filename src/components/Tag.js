@@ -35,7 +35,11 @@ const defaultCity = {
 function Tag(props) {
     const {cityID} = props;
     let capitals = props.weather.getIn("weather.captials".split("."));
-    const city = capitals[cityID] || defaultCity;
+    
+    let city = capitals[cityID];
+    if (!city || Object.keys(city).length === 0) {
+        city = defaultCity;
+    }
 
     const handleFilter = ({ target }) => {
       props.dispatch(uiActions.setTagFilter(target.innerHTML.toUpperCase()));

@@ -1,5 +1,5 @@
 import { actionType } from "./actionType";
-import { post } from "../../utilities/fetch";
+import { get } from "../../utilities/fetch";
 import capitals from "../../data/capital.json";
 import { round2, sumList } from "../../utilities/helpers";
 
@@ -26,7 +26,7 @@ export const pageLoadWeather = () => {
         console.log(capitals.capitals);
         const weathers = capitals.capitals.map((capital, i) => {
             const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${capital.lat}&lon=${capital.lon}&units=metric&cnt=8&appid=${API_key}`
-            post(url)
+            get(url)
             .then(res => {
                 if (res.cod !== "200") {
                     dispatch({type: actionType.weather.weatherLoadRejected, payload: `ErrorCode ${res.cod}: ${res.message}`})
