@@ -19,12 +19,12 @@ function Expand(props) {
       <table>
         <thead>
               <tr>
-                  <td>{"Date and time"}</td>
+                  <td>{"Date & time"}</td>
                   <td>{"Forcast Weather"}</td>
-                  <td>{"Forcast Temperature"}</td>
-                  <td>{"Forcast Body Temperature"}</td>
-                  <td>{"Forcast Max Temperature"}</td>
-                  <td>{"Forcast Min Temperature"}</td>
+                  <td>{"Forcast Temp"}</td>
+                  <td>{"Forcast Body Temp"}</td>
+                  <td>{"Forcast Max Temp"}</td>
+                  <td>{"Forcast Min Temp"}</td>
                 </tr>
             </thead>
             <tbody>
@@ -33,10 +33,10 @@ function Expand(props) {
               <tr key={i}>
                 <td>{`${weatherObj.timestamp}`}</td>
                 <td><img className='expand_img' alt={`${currCity.city} ${weatherObj.timestamp} weather icon`} src={weatherObj.icon} /></td>
-                <td>{`${weatherObj.temp} C`}</td>
-                <td>{`${weatherObj.feels_like} C`}</td>
-                <td>{`${weatherObj.temp_min} C`}</td>
-                <td>{`${weatherObj.temp_max} C`}</td>
+                <td>{`${weatherObj.temp} °C`}</td>
+                <td>{`${weatherObj.feels_like} °C`}</td>
+                <td>{`${weatherObj.temp_min} °C`}</td>
+                <td>{`${weatherObj.temp_max} °C`}</td>
               </tr>)}
               
             </tbody>
@@ -48,22 +48,22 @@ function Expand(props) {
             <table>
               <thead>
                 <tr>
-                    <td>{"Date and time"}</td>
+                    <td>{"Date & time"}</td>
                     <td>{"Current Weather"}</td>
-                    <td>{"Current Temperature"}</td>
-                    <td>{"Current Body Temperature"}</td>
-                    <td>{"Current Max Temperature"}</td>
-                    <td>{"Current Min Temperature"}</td>
+                    <td>{"Current Temp"}</td>
+                    <td>{"Current Body Temp"}</td>
+                    <td>{"Current Max Temp"}</td>
+                    <td>{"Current Min Temp"}</td>
                   </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>{`${currWeather.timestamp}`}</td>
                   <td><img className='expand_img' alt={`${currCity.city} ${currWeather.timestamp} weather icon`} src={currWeather.icon} /></td>
-                  <td>{`${currWeather.temp} C`}</td>
-                  <td>{`${currWeather.feels_like} C`}</td>
-                  <td>{`${currWeather.temp_min} C`}</td>
-                  <td>{`${currWeather.temp_max} C`}</td>
+                  <td>{`${currWeather.temp} °C`}</td>
+                  <td>{`${currWeather.feels_like} °C`}</td>
+                  <td>{`${currWeather.temp_min} °C`}</td>
+                  <td>{`${currWeather.temp_max} °C`}</td>
                 </tr>
               </tbody>
             </table>
