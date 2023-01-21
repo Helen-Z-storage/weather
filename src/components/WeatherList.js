@@ -32,7 +32,7 @@ class WeatherList extends React.Component{
         }
         // handle tag's button filter
         if (event.target.type === "submit") {
-            tagFilter = event.target.innerHTML;
+            tagFilter = event.target.innerHTML.toUpperCase();
         }
         this.setState({cityFilter, countryFilter, tagFilter, groupExpand});
     }
