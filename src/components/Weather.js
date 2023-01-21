@@ -5,6 +5,8 @@ import Expand from './Expand';
 import Tag from './Tag';
 const fileSystem = require("browserify-fs");
 
+const storage = window.localStorage;
+
 const tag_spliter = ",";
 // adding valid tags in localStorage's current student data
 const addNewTag = (filter, keyCode, new_tags) => {
@@ -40,34 +42,54 @@ const addNewTag = (filter, keyCode, new_tags) => {
     return [clear, new_tags];
 }
 
-function Weather(props) {
-    const {id, expand, weatherList, cityFilter, countryFilter, tagFilter, 
-        handleExpand, handleFilter} = props;
+// LocalStorage Hook
+function useLocalStorage(cityID) {
+    // State to store our value
+    // Pass initial state function to useState so logic is only executed once
+    const [prevState, setPrevState] = useState([]);
+    const [city, setCity] = useState(() => {
+        try {
+            // Get from local storage by cityID
+            const existCity = storage.getItem(cityID);
+            return existCity ? JSON.parse(existCity) : {};
+        } catch (error) {
+            console.error('Error:', error);
+            return {};
+        }
+    });
+
+    // update student's tag by value of input tagEvent
     const setNewCity = tagEvent => {
-        const newWeatherList = weatherList.map(
-            (weather, i) => {
-                if (id === i){
-                    const [clear, new_tags] = addNewTag(tagEvent.target.value, tagEvent.nativeEvent.keyCode, weather.tags);
-                    if (clear) {
-                        const newWeather = {...weather};
-                        tagEvent.target.value = "";
-                        newWeather.tags = new_tags;
-                        return newWeather
-                    }
-                }
-                return weather;
-            })
-        
-        const data = JSON.stringify(newWeatherList);
-        
-        fileSystem.writeFile("weather.json", data, err=>{
-            if(err){
-                console.log("Error writing file" ,err)
-            } else {
-                console.log('JSON data is written to the file successfully')
-            }
-        });
-    }
+        try {
+            // adding tag and clear tag adding field by cases
+            const [clear, new_tags] = addNewTag(tagEvent.target.value, tagEvent.nativeEvent.keyCode, city.tags);
+            if (clear) {
+                tagEvent.target.value = "";
+                city.tags = new_tags;
+            };
+
+            // Save new student in state and update new state for synchronize render
+            setCity(city);
+            setPrevState([...prevState]);
+
+            // Save new student to local storage
+            storage.setItem(cityID, JSON.stringify(city));
+
+        } catch (error) {
+            console.error('Error:', error);
+        }
+      };
+
+    return [city, setNewCity];
+}
+
+function Weather(props) {
+    const {id, expand, cityFilter, countryFilter, tagFilter, 
+        handleExpand, handleFilter} = props;
+
+    
+    // init student local storage update hook
+    const [city, setNewCity] = useLocalStorage(id);
     /*
     const {id, weatherList, expand, cityFilter, countryFilter, tagFilter, 
         handleExpand, handleFilter, setWeatherList} = props;
@@ -90,11 +112,10 @@ function Weather(props) {
     }
     */
     
-    let currCity, removeByCity, removeByCountry, removeByTag, disp;
-    currCity = weatherList[id];
-    removeByCity = currCity.city.toUpperCase().indexOf(cityFilter) === -1;
-    removeByCountry = currCity.country.toUpperCase().indexOf(countryFilter) === -1;
-    removeByTag = currCity.tags.toUpperCase().indexOf(tagFilter) === -1;
+    let removeByCity, removeByCountry, removeByTag, disp;
+    removeByCity = city.city.toUpperCase().indexOf(cityFilter) === -1;
+    removeByCountry = city.country.toUpperCase().indexOf(countryFilter) === -1;
+    removeByTag = city.tags.toUpperCase().indexOf(tagFilter) === -1;
     console.log(cityFilter, countryFilter, tagFilter);
 
     disp = (removeByCity || removeByCountry || removeByTag)? {display:"none"}: {};
@@ -103,13 +124,13 @@ function Weather(props) {
         <li className="single_city" style={disp}>
             <table>
                 <tbody>
-                    <WeatherData currCity={currCity}/>
+                    <WeatherData currCity={city}/>
                     <tr>
                         <td></td>
                         <td>
-                            <Expand id={id} currCity={currCity}
+                            <Expand id={id} currCity={city}
                                 expand={expand} handleExpand={handleExpand} />
-                            <Tag tags={currCity.tags} handleFilter={handleFilter}
+                            <Tag tags={city.tags} handleFilter={handleFilter}
                                 setNewCity={setNewCity}/>
                         </td>
                     </tr>

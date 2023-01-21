@@ -31,7 +31,7 @@ function Expand(props) {
         {detailWeathers.map(
       (weatherObj, i) => 
               <tr key={i}>
-                <td>{`${weatherObj.timestamp}`}</td>
+                <td>{`${weatherObj.time}`}</td>
                 <td><img className='expand_img' alt={`${currCity.city} ${weatherObj.timestamp} weather icon`} src={weatherObj.icon} /></td>
                 <td>{`${weatherObj.temp} °C`}</td>
                 <td>{`${weatherObj.feels_like} °C`}</td>
@@ -58,7 +58,7 @@ function Expand(props) {
               </thead>
               <tbody>
                 <tr>
-                  <td>{`${currWeather.timestamp}`}</td>
+                  <td>{`${currWeather.time}`}</td>
                   <td><img className='expand_img' alt={`${currCity.city} ${currWeather.timestamp} weather icon`} src={currWeather.icon} /></td>
                   <td>{`${currWeather.temp} °C`}</td>
                   <td>{`${currWeather.feels_like} °C`}</td>
