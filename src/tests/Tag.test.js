@@ -24,7 +24,22 @@ const setNewCity2 = jest.fn();
 const tagErrorMsg = "";
 const tagErrorMsg2 = "Error";
 
+// patching the respective key events in the test suites for legacy code
+// from https://github.com/testing-library/user-event/issues/946
+const keyCodes = {
+    Enter: 13,
+  }
+  function patchKeyEvent(e) {
+    Object.defineProperty(e, 'keyCode', {
+      get: () => keyCodes[e.code] ?? 0,
+    })
+  }
+  
 describe('testing Tag component', () => {
+
+    beforeAll(() => {
+        document.addEventListener('keyup', patchKeyEvent, {capture: true})
+      })
 
     test("Matches the snapshot", () => {
         // create component

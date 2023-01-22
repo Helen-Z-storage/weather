@@ -22,10 +22,11 @@ const unfiltCountryFilter = "KHB";
 const tagFilter = "";
 const filtTagFilter = "AD";
 const unfiltTagFilter = "AW";
-const duplicate_tag = "MENT{enter}";
-const non_duplicate_tag = "AD{enter}";
+const enter = "{enter}";
+const duplicate_tag = "MENT" + enter;
+const non_duplicate_tag = "AD";
 const tag_split_tag = `R%${tag_spliter}`;
-const empty_tag = "{enter}";
+const empty_tag = enter;
 const handleExpand = jest.fn();
 const handleFilter = jest.fn();
 const storage = window.localStorage;
@@ -116,7 +117,23 @@ const city_data = {
 
 storage.setItem(id, JSON.stringify(city_data));
 
+// patching the respective key events in the test suites for legacy code
+// from https://github.com/testing-library/user-event/issues/946
+const keyCodes = {
+    Enter: 13,
+  }
+  function patchKeyEvent(e) {
+    Object.defineProperty(e, 'keyCode', {
+      get: () => keyCodes[e.code] ?? 0,
+    })
+  }
+
 describe('testing Weather component with data', () => {
+
+    beforeAll(() => {
+        document.addEventListener('keyup', patchKeyEvent, {capture: true})
+      })
+
     test("Matches the snapshot: shows expanded Expand component", () => {
         // create component
         const city = create(
@@ -234,30 +251,27 @@ describe('testing Weather component with data', () => {
         // expecting output
         // adding duplicate tag
         const textfield = screen.getByPlaceholderText("Add a tag");
+
         await user.type(textfield, duplicate_tag);
         let city = JSON.parse(storage.getItem(id));
         let tags = city_data.tags;
         expect(city.tags).toEqual(tags);
-        screen.debug();
         expect(screen.queryByText(`No duplicate tag should been add`)).not.toEqual(null);
-        expect(alert.mock.calls[0][0]).toEqual();
 
         // adding invalid empty tag
         await user.type(textfield, empty_tag);
         city = JSON.parse(storage.getItem(id));
         expect(city.tags).toEqual(tags);
-        expect(alert).toBeCalledTimes(2);
-        expect(alert.mock.calls[1][0]).toEqual(`No empty tag should been add`);
+        expect(screen.queryByText(`No empty tag should been add`)).not.toEqual(null);
 
         // adding invalid tag_split tag
         await user.type(textfield, tag_split_tag);
         city = JSON.parse(storage.getItem(id));
         expect(city.tags).toEqual(tags);
-        expect(alert).toBeCalledTimes(3);
-        expect(alert.mock.calls[2][0]).toEqual(`No "${tag_spliter}" should include in Tag`);
+        expect(screen.queryByText(`No "${tag_spliter}" should include in Tag`)).not.toEqual(null);
 
         // adding non-duplicate tag
-        await user.type(textfield, non_duplicate_tag + "{enter}");
+        await user.type(textfield, non_duplicate_tag + enter);
         city = JSON.parse(storage.getItem(id));
         expect(city.tags).toEqual(tags + non_duplicate_tag + tag_spliter);
     });
