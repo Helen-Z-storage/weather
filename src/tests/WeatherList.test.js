@@ -8,83 +8,286 @@ import userEvent from '@testing-library/user-event';
 import WeatherList from '../components/WeatherList';
 
 // required prop data of create component
+const user = userEvent.setup();
+
 const tag_spliter = " ";
 const pic_folder = "https://storage.googleapis.com/hatchways-app.appspot.com" + 
                    "/assessments/data/frontend/images/";
 let city_ids = [];
-const name_filt_one = "NE";
-const name_filt_two = "N";
-const name_filter = "{enter}";
+const city_filt_one = "UL";
+const city_filt_two = "U";
+const city_filter = "{Enter}";
+const country_filt_one = "HAN";
+const country_filt_two = "AN";
+const country_filter = "{enter}";
 const tag_filt_one = "M";
 const tag_filt_two = "%";
-const tag_filter = "{enter}";
-const tag_but_one = "%";
-const tag_but_two = "a";
+const tag_filter = "{Enter}";
+const tag_but_one = "Ment";
+const tag_but_two = "%";
 const expand_T = "-";
 const expand_F = "+";
-const expand_context = "Test";
+const expand_context = "Forcast";
 
-
-const filt_tag_filter = "ad";
-const unfilt_tag_filter = "aw";
-const duplicate_tag = "Ment{enter}";
-const non_duplicate_tag = "AD";
-const tag_split_tag = `R%${tag_spliter}`;
-const empty_tag = "{enter}";
-const handleExpand = jest.fn();
-const handleFilter = jest.fn();
 const storage = window.localStorage;
-const jsdomAlert = window.alert;
 
 // store this city as 0 in mocked localstorage
-const city_datas = [
-    {
-        city: "Fushë-Muhurr",
-        company: "Yadel",
-        email: "iorton0@imdb.com",
-        firstName: "Ingaberg",
-        grades: ["78", "100", "92", "86", "89", "88", "91", "87"],
-        id: "1",
-        lastName: "Orto",
-        pic: pic_folder + "voluptasdictablanditiis.jpg",
-        skill: "Oracle",
-        tags: " a ver tise 339%? "
+const city_datas = [{
+    country: "Abkhazia",
+    city: "Sukhumi",
+    lat: 43.0033629,
+    lon: 41.0192741,
+    tags: ",a,ver,tise,339?%,",
+    icon: "https://openweathermap.org/img/wn/03d@2x.png",
+    curr_forecast: {
+        timestamp: "2023-01-18 09:00:00",
+        temp: 11.57,
+        feels_like: 10.06,
+        temp_min: 11.57,
+        temp_max: 14.54,
+        icon: "https://openweathermap.org/img/wn/03d@2x.png"
     },
-    {
-        city: "Sanghan",
-        company: "Avamm",
-        email: "cboards1@weibo.com",
-        firstName: "Clarke",
-        grades: ["75","89","95","93","99","82","89","76"],
-        id: "2",
-        lastName: "Boards",
-        pic: pic_folder + "voluptasautreprehenderit.jpg",
-        skill: "Sports", 
-        tags: " % 33 "
+    detail_forecast: [
+        {
+            timestamp: "2023-01-18 09:00:00",
+            temp: 11.57,
+            feels_like: 10.06,
+            temp_min: 11.57,
+            temp_max: 14.54,
+            icon: "https://openweathermap.org/img/wn/03d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 12:00:00",
+            temp: 13.2,
+            feels_like: 11.83,
+            temp_min: 13.2,
+            temp_max: 14.75,
+            icon: "https://openweathermap.org/img/wn/03d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 15:00:00",
+            temp: 12.26,
+            feels_like: 10.95,
+            temp_min: 12.26,
+            temp_max: 12.26,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 18:00:00",
+            temp: 11.37,
+            feels_like: 9.97,
+            temp_min: 11.37,
+            temp_max: 11.37,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 21:00:00",
+            temp: 11.01,
+            feels_like: 9.55,
+            temp_min: 11.01,
+            temp_max: 11.01,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 00:00:00",
+            temp: 10.28,
+            feels_like: 8.7,
+            temp_min: 10.28,
+            temp_max: 10.28,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 03:00:00",
+            temp: 9.95,
+            feels_like: 8.9,
+            temp_min: 9.95,
+            temp_max: 9.95,
+            icon: "https://openweathermap.org/img/wn/02n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 06:00:00",
+            temp: 11.08,
+            feels_like: 9.47,
+            temp_min: 11.08,
+            temp_max: 11.08,
+            icon: "https://openweathermap.org/img/wn/02d@2x.png"
+        }
+    ]
+},
+{
+    country: "Afghanistan",
+    city: "Kabul",
+    lat: 34.5260109,
+    lon: 69.1776838,
+    tags: ",%,33,",
+    icon: "https://openweathermap.org/img/wn/04d@2x.png",
+    curr_forecast: {
+        timestamp: "2023-01-18 09:00:00",
+        temp: -1.35,
+        feels_like: -1.35,
+        temp_min: -1.35,
+        temp_max: -0.24,
+        icon: "https://openweathermap.org/img/wn/04d@2x.png"
     },
-    {
-        city: "Kugesi",
-        company: "Skalith",
-        email: "lromanet2@wired.com",
-        firstName: "Lucy",
-        grades: ["88","90","79","82","81","99","94","73"],
-        id: "3",
-        lastName: "Romanet",
-        pic: pic_folder + "aspernaturnonsapiente.jpg",
-        skill: "Employee Handbooks",
-        tags: " Ment ad "
-    }
-]
+    detail_forecast: [
+        {
+            timestamp: "2023-01-18 09:00:00",
+            temp: -1.35,
+            feels_like: -1.35,
+            temp_min: -1.35,
+            temp_max: -0.24,
+            icon: "https://openweathermap.org/img/wn/04d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 12:00:00",
+            temp: -1.16,
+            feels_like: -1.16,
+            temp_min: -1.16,
+            temp_max: -0.79,
+            icon: "https://openweathermap.org/img/wn/13d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 15:00:00",
+            temp: -1.71,
+            feels_like: -4.17,
+            temp_min: -1.71,
+            temp_max: -1.71,
+            icon: "https://openweathermap.org/img/wn/13n@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 18:00:00",
+            temp: -2.49,
+            feels_like: -5.18,
+            temp_min: -2.49,
+            temp_max: -2.49,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 21:00:00",
+            temp: -3.49,
+            feels_like: -6.29,
+            temp_min: -3.49,
+            temp_max: -3.49,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 00:00:00",
+            temp: -4.41,
+            feels_like: -7.79,
+            temp_min: -4.41,
+            temp_max: -4.41,
+            icon: "https://openweathermap.org/img/wn/04n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 03:00:00",
+            temp: -4.27,
+            feels_like: -7.58,
+            temp_min: -4.27,
+            temp_max: -4.27,
+            icon: "https://openweathermap.org/img/wn/04d@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 06:00:00",
+            temp: -0.45,
+            feels_like: -2.74,
+            temp_min: -0.45,
+            temp_max: -0.45,
+            icon: "https://openweathermap.org/img/wn/04d@2x.png"
+        }
+    ]
+},
+{
+    country: "Albania",
+    city: "Tirana",
+    lat: 41.3305141,
+    lon: 19.825562857582966,
+    tags: ",Ment,ad,",
+    icon: "https://openweathermap.org/img/wn/10d@2x.png",
+    curr_forecast: {
+        timestamp: "2023-01-18 09:00:00",
+        temp: 14.27,
+        feels_like: 13.58,
+        temp_min: 13.88,
+        temp_max: 14.27,
+        icon: "https://openweathermap.org/img/wn/10d@2x.png"
+    },
+    detail_forecast: [
+        {
+            timestamp: "2023-01-18 09:00:00",
+            temp: 14.27,
+            feels_like: 13.58,
+            temp_min: 13.88,
+            temp_max: 14.27,
+            icon: "https://openweathermap.org/img/wn/10d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 12:00:00",
+            temp: 14.01,
+            feels_like: 13.4,
+            temp_min: 13.78,
+            temp_max: 14.01,
+            icon: "https://openweathermap.org/img/wn/10d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 15:00:00",
+            temp: 13.36,
+            feels_like: 12.74,
+            temp_min: 13.36,
+            temp_max: 13.36,
+            icon: "https://openweathermap.org/img/wn/10d@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 18:00:00",
+            temp: 11.84,
+            feels_like: 11.12,
+            temp_min: 11.84,
+            temp_max: 11.84,
+            icon: "https://openweathermap.org/img/wn/10n@2x.png"
+        },
+        {
+            timestamp: "2023-01-18 21:00:00",
+            temp: 12.82,
+            feels_like: 12.17,
+            temp_min: 12.82,
+            temp_max: 12.82,
+            icon: "https://openweathermap.org/img/wn/10n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 00:00:00",
+            temp: 12.55,
+            feels_like: 11.9,
+            temp_min: 12.55,
+            temp_max: 12.55,
+            icon: "https://openweathermap.org/img/wn/10n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 03:00:00",
+            temp: 12.68,
+            feels_like: 12.01,
+            temp_min: 12.68,
+            temp_max: 12.68,
+            icon: "https://openweathermap.org/img/wn/10n@2x.png"
+        },
+        {
+            timestamp: "2023-01-19 06:00:00",
+            temp: 12.58,
+            feels_like: 11.85,
+            temp_min: 12.58,
+            temp_max: 12.58,
+            icon: "https://openweathermap.org/img/wn/10n@2x.png"
+        }
+    ]
+}];
+
 city_datas.map((city, i) => {
     storage.setItem(i, JSON.stringify(city));
     city_ids.push(i);
 })
 const store_length = storage.length;
 const city_names = city_datas.map(
-    city => `${city.firstName} ${city.lastName}`.toUpperCase());
-const non_name_length = "profile".length + 1;
+    city => `${city.city}`);
 const test_nums = city_datas.map(
-    city => city.grades.length);
+    _ => 5);
 
 describe('testing WeatherList component', () => {
     test("Matches the snapshot", () => {
@@ -98,46 +301,80 @@ describe('testing WeatherList component', () => {
     });
 
     // testing filters
-    test("test name filters", () => {
+    test("test city filters", async () => {
         // render component
         render(
             <WeatherList store_length={store_length}/>
         );
 
         // expecting output
-        const textfield = screen.getByPlaceholderText("Search by name");
+        const textfield = screen.getByPlaceholderText("Search by city");
         // filt one citys
-        userEvent.type(textfield, name_filt_one);
-        let filtered_citys = screen.queryAllByRole("img");
-        let filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[2]);
+        await user.type(textfield, city_filt_one);
+        
+        expect(screen.queryByText(city_names[0])).not.toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).not.toBeVisible();
 
         // clear textfield
-        userEvent.clear(textfield);
+        await user.clear(textfield);
         
         // filt two citys
-        userEvent.type(textfield, name_filt_two);
-        filtered_citys = screen.queryAllByRole("img");
-        filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[0]);
-        expect(filtered_names[1]).toEqual(city_names[2]);
-        
+        await user.type(textfield, city_filt_two);
+
+        expect(screen.queryByText(city_names[0])).toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).not.toBeVisible();
+
         // clear textfield
-        userEvent.clear(textfield);
+        await user.clear(textfield);
 
         // filt all citys
-        userEvent.type(textfield, name_filter);
-        filtered_citys = screen.queryAllByRole("img");
-        filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[0]);
-        expect(filtered_names[1]).toEqual(city_names[1]);
-        expect(filtered_names[2]).toEqual(city_names[2]);
+        await user.type(textfield, city_filter);
+
+        expect(screen.queryByText(city_names[0])).toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).toBeVisible();
     });
 
-    test("test tag filters", () => {
+        // testing filters
+    test("test country filters", async () => {
+        // render component
+        render(
+            <WeatherList store_length={store_length}/>
+        );
+
+        // expecting output
+        const textfield = screen.getByPlaceholderText("Search by country");
+        // filt one citys
+        await user.type(textfield, country_filt_one);
+        
+        expect(screen.queryByText(city_names[0])).not.toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).not.toBeVisible();
+
+        // clear textfield
+        await user.clear(textfield);
+        
+        // filt two citys
+        await user.type(textfield, country_filt_two);
+        
+        expect(screen.queryByText(city_names[0])).not.toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).toBeVisible();
+        
+        // clear textfield
+        await user.clear(textfield);
+
+        // filt all citys
+        await user.type(textfield, country_filter);
+        
+        expect(screen.queryByText(city_names[0])).toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).toBeVisible();
+    });
+
+    test("test tag filters", async () => {
         // render component
         render(
             <WeatherList store_length={store_length}/>
@@ -146,37 +383,31 @@ describe('testing WeatherList component', () => {
         // expecting output
         const textfield = screen.getByPlaceholderText("Search by tag");
         // filt one citys
-        userEvent.type(textfield, tag_filt_one);
-        let filtered_citys = screen.queryAllByRole("img");
-        let filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[2]);
+        await user.type(textfield, tag_filt_one);
+        expect(screen.queryByText(city_names[0])).not.toBeVisible();
+        expect(screen.queryByText(city_names[1])).not.toBeVisible();
+        expect(screen.queryByText(city_names[2])).toBeVisible();
 
         // clear textfield
-        userEvent.clear(textfield);
+        await user.clear(textfield);
         
         // filt two citys
-        userEvent.type(textfield, tag_filt_two);
-        filtered_citys = screen.queryAllByRole("img");
-        filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[0]);
-        expect(filtered_names[1]).toEqual(city_names[1]);
+        await user.type(textfield, tag_filt_two);
+        expect(screen.queryByText(city_names[0])).toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).not.toBeVisible();
         
         // clear textfield
-        userEvent.clear(textfield);
+        await user.clear(textfield);
 
         // filt all citys
-        userEvent.type(textfield, tag_filter);
-        filtered_citys = screen.queryAllByRole("img");
-        filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[0]);
-        expect(filtered_names[1]).toEqual(city_names[1]);
-        expect(filtered_names[2]).toEqual(city_names[2]);
+        await user.type(textfield, tag_filter);
+        expect(screen.queryByText(city_names[0])).toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).toBeVisible();
     });
 
-    test("test tag button", () => {
+    test("test tag button", async () => {
         // render component
         render(
             <WeatherList store_length={store_length}/>
@@ -185,26 +416,21 @@ describe('testing WeatherList component', () => {
         // expecting output
         // click tag_but_one to filt
         let button = screen.getByText(tag_but_one);
-        userEvent.click(button);
-        let filtered_citys = screen.queryAllByRole("img");
-        let filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-            expect(filtered_names[0]).toEqual(city_names[0]);
-            expect(filtered_names[1]).toEqual(city_names[1]);
+        await user.click(button);
+        expect(screen.queryByText(city_names[0])).not.toBeVisible();
+        expect(screen.queryByText(city_names[1])).not.toBeVisible();
+        expect(screen.queryByText(city_names[2])).toBeVisible();
         
         // filt two citys
         button = screen.getByText(tag_but_two);
-        userEvent.click(button);
-        filtered_citys = screen.queryAllByRole("img");
-        filtered_names = filtered_citys.map(
-            city => city.alt.substring(0, city.alt.length - non_name_length));
-        expect(filtered_names[0]).toEqual(city_names[0]);
-        expect(filtered_names[1]).toEqual(city_names[2]);
-        
+        await user.click(button);
+        expect(screen.queryByText(city_names[0])).toBeVisible();
+        expect(screen.queryByText(city_names[1])).toBeVisible();
+        expect(screen.queryByText(city_names[2])).not.toBeVisible(); 
     });
 
     // testing expand
-    test("test expand button", () => {
+    test("test expand button", async () => {
         // render component
         render(
             <WeatherList store_length={store_length}/>
@@ -213,20 +439,22 @@ describe('testing WeatherList component', () => {
         // expecting output
         // exand one city
         let buttons = screen.getAllByText(expand_F);
-        userEvent.click(buttons[1]);
+        await user.click(buttons[1]);
         let expanded_test = screen.getAllByText(expand_context, {exact: false});
         expect(expanded_test.length).toEqual(test_nums[1]);
+        expect(buttons[1].textContent).toEqual(expand_T);
         
         // exand two citys
         buttons = screen.getAllByText(expand_F);
-        userEvent.click(buttons[1]);
+        await user.click(buttons[1]);
         expanded_test = screen.getAllByText(expand_context, {exact: false});
         expect(expanded_test.length).toEqual(test_nums[1] + test_nums[2]);
 
         // un-exand one city
         buttons = screen.getAllByText(expand_T);
-        userEvent.click(buttons[0]);
+        await user.click(buttons[0]);
         expanded_test = screen.getAllByText(expand_context, {exact: false});
         expect(expanded_test.length).toEqual(test_nums[2]);
+        expect(buttons[0].textContent).toEqual(expand_F);
     });
 });

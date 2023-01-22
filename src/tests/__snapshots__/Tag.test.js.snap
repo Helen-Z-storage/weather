@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Tag component Matches the snapshot 1`] = `
+<ul>
+  <li
+    className="tags"
+  >
+    <button
+      onClick={[Function]}
+    >
+      ad
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      ver
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      tise
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Ment
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      339%?
+    </button>
+  </li>
+  <li
+    className="tagError"
+  >
+    
+  </li>
+  <li>
+    <input
+      onKeyUp={[Function]}
+      placeholder="Add a tag"
+      type="text"
+    />
+  </li>
+</ul>
+`;
+
+exports[`testing Tag component Matches the snapshot with error message 1`] = `
+<ul>
+  <li
+    className="tags"
+  >
+    <button
+      onClick={[Function]}
+    >
+      ad
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      ver
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      tise
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Ment
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      339%?
+    </button>
+  </li>
+  <li
+    className="tagError"
+  >
+    Error
+  </li>
+  <li>
+    <input
+      onKeyUp={[Function]}
+      placeholder="Add a tag"
+      type="text"
+    />
+  </li>
+</ul>
+`;

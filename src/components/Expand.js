@@ -1,19 +1,13 @@
 import React from 'react';
 import '../css/Expand.css';
 
-
 function Expand(props) {
   const {id, currCity, expand, handleExpand} = props;
-
-
-    
-    let detailWeatherList = <li></li>;
-    let currWeatherList = <li></li>;
-
     const currWeather = currCity.curr_forecast;
     const detailWeathers = currCity.detail_forecast;
     
     // expanded 
+    let detailWeatherList = <li></li>;
     detailWeatherList = 
     <li key={"forcast_weather"}>
       <table>
@@ -43,6 +37,7 @@ function Expand(props) {
           </table>
           </li>
 
+      let currWeatherList = <li></li>;
       currWeatherList = 
       <li key={"curr_weather"}>
             <table>

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing WeatherData component Matches the snapshot 1`] = `
+<tr>
+  <td>
+    <img
+      alt="Sukhumi weather icon"
+      className="curr_weather"
+      src="https://openweathermap.org/img/wn/03d@2x.png"
+    />
+  </td>
+  <td>
+    <ul
+      className="data_space"
+    >
+      <li>
+        <div
+          className="city_name"
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          Sukhumi
+        </div>
+      </li>
+      <li>
+        <div
+          className="country_name"
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          Abkhazia
+        </div>
+      </li>
+    </ul>
+  </td>
+</tr>
+`;

@@ -6,3 +6,7 @@
     border: hidden;
     border-radius: 4px;
   }
+
+.tagError {
+  color: red;
+  }

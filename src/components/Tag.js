@@ -4,7 +4,7 @@ import '../css/Tag.css';
 const tag_spliter = ",";
 
 function Tag(props) {
-  const {tags, handleFilter, setNewCity} = props;
+  const {tags, tagErrorMsg, handleFilter, setNewCity} = props;
 
 
     // split string tag into a list of valid tags, and remove empty tag
@@ -14,6 +14,7 @@ function Tag(props) {
     return (
         <ul>
             <li key="tags" className='tags'>{tag_lst}</li>
+            <li className='tagError'>{tagErrorMsg}</li>
             <li><input type="text" onKeyUp={event => setNewCity(event)} placeholder="Add a tag" /></li>
         </ul>
     );

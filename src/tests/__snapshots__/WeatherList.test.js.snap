@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing WeatherList component Matches the snapshot 1`] = `
+<table
+  id="context_box"
+>
+  <tbody>
+    <tr>
+      <td
+        id="filter_space"
+      >
+        <input
+          id="cityFilter"
+          onKeyUp={[Function]}
+          placeholder="Search by city"
+          type="text"
+        />
+        <input
+          id="countryFilter"
+          onKeyUp={[Function]}
+          placeholder="Search by country"
+          type="text"
+        />
+        <input
+          id="tagFilter"
+          onKeyUp={[Function]}
+          placeholder="Search by tag"
+          type="text"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul
+          id="lst_table"
+        >
+          <li
+            className="single_city"
+            style={Object {}}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      alt="Sukhumi weather icon"
+                      className="curr_weather"
+                      src="https://openweathermap.org/img/wn/03d@2x.png"
+                    />
+                  </td>
+                  <td>
+                    <ul
+                      className="data_space"
+                    >
+                      <li>
+                        <div
+                          className="city_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Sukhumi
+                        </div>
+                      </li>
+                      <li>
+                        <div
+                          className="country_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Abkhazia
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td>
+                    <ul
+                      className="detailWeather"
+                    >
+                      <li>
+                        <button
+                          className="expand"
+                          onClick={[Function]}
+                        >
+                          +
+                        </button>
+                      </li>
+                      <li>
+                        <table>
+                          <thead>
+                            <tr>
+                              <td>
+                                Date & time
+                              </td>
+                              <td>
+                                Current Weather
+                              </td>
+                              <td>
+                                Current Temp
+                              </td>
+                              <td>
+                                Current Body Temp
+                              </td>
+                              <td>
+                                Current Max Temp
+                              </td>
+                              <td>
+                                Current Min Temp
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                undefined
+                              </td>
+                              <td>
+                                <img
+                                  alt="Sukhumi 2023-01-18 09:00:00 weather icon"
+                                  className="expand_img"
+                                  src="https://openweathermap.org/img/wn/03d@2x.png"
+                                />
+                              </td>
+                              <td>
+                                11.57 °C
+                              </td>
+                              <td>
+                                10.06 °C
+                              </td>
+                              <td>
+                                11.57 °C
+                              </td>
+                              <td>
+                                14.54 °C
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li
+                        className="tags"
+                      >
+                        <button
+                          onClick={[Function]}
+                        >
+                          a
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          ver
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          tise
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          339?%
+                        </button>
+                      </li>
+                      <li
+                        className="tagError"
+                      >
+                        
+                      </li>
+                      <li>
+                        <input
+                          onKeyUp={[Function]}
+                          placeholder="Add a tag"
+                          type="text"
+                        />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li
+            className="single_city"
+            style={Object {}}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      alt="Kabul weather icon"
+                      className="curr_weather"
+                      src="https://openweathermap.org/img/wn/04d@2x.png"
+                    />
+                  </td>
+                  <td>
+                    <ul
+                      className="data_space"
+                    >
+                      <li>
+                        <div
+                          className="city_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Kabul
+                        </div>
+                      </li>
+                      <li>
+                        <div
+                          className="country_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Afghanistan
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td>
+                    <ul
+                      className="detailWeather"
+                    >
+                      <li>
+                        <button
+                          className="expand"
+                          onClick={[Function]}
+                        >
+                          +
+                        </button>
+                      </li>
+                      <li>
+                        <table>
+                          <thead>
+                            <tr>
+                              <td>
+                                Date & time
+                              </td>
+                              <td>
+                                Current Weather
+                              </td>
+                              <td>
+                                Current Temp
+                              </td>
+                              <td>
+                                Current Body Temp
+                              </td>
+                              <td>
+                                Current Max Temp
+                              </td>
+                              <td>
+                                Current Min Temp
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                undefined
+                              </td>
+                              <td>
+                                <img
+                                  alt="Kabul 2023-01-18 09:00:00 weather icon"
+                                  className="expand_img"
+                                  src="https://openweathermap.org/img/wn/04d@2x.png"
+                                />
+                              </td>
+                              <td>
+                                -1.35 °C
+                              </td>
+                              <td>
+                                -1.35 °C
+                              </td>
+                              <td>
+                                -1.35 °C
+                              </td>
+                              <td>
+                                -0.24 °C
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li
+                        className="tags"
+                      >
+                        <button
+                          onClick={[Function]}
+                        >
+                          %
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          33
+                        </button>
+                      </li>
+                      <li
+                        className="tagError"
+                      >
+                        
+                      </li>
+                      <li>
+                        <input
+                          onKeyUp={[Function]}
+                          placeholder="Add a tag"
+                          type="text"
+                        />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li
+            className="single_city"
+            style={Object {}}
+          >
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      alt="Tirana weather icon"
+                      className="curr_weather"
+                      src="https://openweathermap.org/img/wn/10d@2x.png"
+                    />
+                  </td>
+                  <td>
+                    <ul
+                      className="data_space"
+                    >
+                      <li>
+                        <div
+                          className="city_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Tirana
+                        </div>
+                      </li>
+                      <li>
+                        <div
+                          className="country_name"
+                          style={
+                            Object {
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          Albania
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td />
+                  <td>
+                    <ul
+                      className="detailWeather"
+                    >
+                      <li>
+                        <button
+                          className="expand"
+                          onClick={[Function]}
+                        >
+                          +
+                        </button>
+                      </li>
+                      <li>
+                        <table>
+                          <thead>
+                            <tr>
+                              <td>
+                                Date & time
+                              </td>
+                              <td>
+                                Current Weather
+                              </td>
+                              <td>
+                                Current Temp
+                              </td>
+                              <td>
+                                Current Body Temp
+                              </td>
+                              <td>
+                                Current Max Temp
+                              </td>
+                              <td>
+                                Current Min Temp
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                undefined
+                              </td>
+                              <td>
+                                <img
+                                  alt="Tirana 2023-01-18 09:00:00 weather icon"
+                                  className="expand_img"
+                                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                                />
+                              </td>
+                              <td>
+                                14.27 °C
+                              </td>
+                              <td>
+                                13.58 °C
+                              </td>
+                              <td>
+                                13.88 °C
+                              </td>
+                              <td>
+                                14.27 °C
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li
+                        className="tags"
+                      >
+                        <button
+                          onClick={[Function]}
+                        >
+                          Ment
+                        </button>
+                        <button
+                          onClick={[Function]}
+                        >
+                          ad
+                        </button>
+                      </li>
+                      <li
+                        className="tagError"
+                      >
+                        
+                      </li>
+                      <li>
+                        <input
+                          onKeyUp={[Function]}
+                          placeholder="Add a tag"
+                          type="text"
+                        />
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

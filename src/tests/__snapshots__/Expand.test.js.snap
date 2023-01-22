@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Expand component Matches the snapshot: shows expanded Expand component 1`] = `
+<ul
+  className="detailWeather"
+>
+  <li>
+    <button
+      className="expand"
+      onClick={[Function]}
+    >
+      -
+    </button>
+  </li>
+  <li>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            Date & time
+          </td>
+          <td>
+            Forcast Weather
+          </td>
+          <td>
+            Forcast Temp
+          </td>
+          <td>
+            Forcast Body Temp
+          </td>
+          <td>
+            Forcast Max Temp
+          </td>
+          <td>
+            Forcast Min Temp
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-18 09:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+            />
+          </td>
+          <td>
+            12.01 °C
+          </td>
+          <td>
+            11.12 °C
+          </td>
+          <td>
+            9.79 °C
+          </td>
+          <td>
+            12.01 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-18 12:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+            />
+          </td>
+          <td>
+            11.35 °C
+          </td>
+          <td>
+            10.42 °C
+          </td>
+          <td>
+            10.47 °C
+          </td>
+          <td>
+            11.35 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-18 15:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+            />
+          </td>
+          <td>
+            11.8 °C
+          </td>
+          <td>
+            10.52 °C
+          </td>
+          <td>
+            11.8 °C
+          </td>
+          <td>
+            11.8 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-18 18:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10n@2x.png"
+            />
+          </td>
+          <td>
+            11.07 °C
+          </td>
+          <td>
+            9.8 °C
+          </td>
+          <td>
+            11.07 °C
+          </td>
+          <td>
+            11.07 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-18 21:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10n@2x.png"
+            />
+          </td>
+          <td>
+            11.57 °C
+          </td>
+          <td>
+            10.24 °C
+          </td>
+          <td>
+            11.57 °C
+          </td>
+          <td>
+            11.57 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-19 00:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10n@2x.png"
+            />
+          </td>
+          <td>
+            11.42 °C
+          </td>
+          <td>
+            9.95 °C
+          </td>
+          <td>
+            11.42 °C
+          </td>
+          <td>
+            11.42 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-19 03:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10n@2x.png"
+            />
+          </td>
+          <td>
+            10.93 °C
+          </td>
+          <td>
+            9.54 °C
+          </td>
+          <td>
+            10.93 °C
+          </td>
+          <td>
+            10.93 °C
+          </td>
+        </tr>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-19 06:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10n@2x.png"
+            />
+          </td>
+          <td>
+            10.43 °C
+          </td>
+          <td>
+            9.12 °C
+          </td>
+          <td>
+            10.43 °C
+          </td>
+          <td>
+            10.43 °C
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+`;
+
+exports[`testing Expand component Matches the snapshot: shows non-expanded Expand component 1`] = `
+<ul
+  className="detailWeather"
+>
+  <li>
+    <button
+      className="expand"
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </li>
+  <li>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            Date & time
+          </td>
+          <td>
+            Current Weather
+          </td>
+          <td>
+            Current Temp
+          </td>
+          <td>
+            Current Body Temp
+          </td>
+          <td>
+            Current Max Temp
+          </td>
+          <td>
+            Current Min Temp
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            undefined
+          </td>
+          <td>
+            <img
+              alt="Algiers 2023-01-18 09:00:00 weather icon"
+              className="expand_img"
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+            />
+          </td>
+          <td>
+            12.01 °C
+          </td>
+          <td>
+            11.12 °C
+          </td>
+          <td>
+            9.79 °C
+          </td>
+          <td>
+            12.01 °C
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+`;

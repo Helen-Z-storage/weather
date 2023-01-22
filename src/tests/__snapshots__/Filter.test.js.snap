@@ -5,13 +5,19 @@ exports[`testing Filter component Matches the snapshot 1`] = `
   id="filter_space"
 >
   <input
-    id="name_filter"
+    id="cityFilter"
     onKeyUp={[Function]}
-    placeholder="Search by name"
+    placeholder="Search by city"
     type="text"
   />
   <input
-    id="tag_filter"
+    id="countryFilter"
+    onKeyUp={[Function]}
+    placeholder="Search by country"
+    type="text"
+  />
+  <input
+    id="tagFilter"
     onKeyUp={[Function]}
     placeholder="Search by tag"
     type="text"
