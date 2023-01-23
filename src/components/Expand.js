@@ -22,7 +22,7 @@ function Expand(props) {
                 </tr>
             </thead>
             <tbody>
-        {detailWeathers.map(
+        {detailWeathers? detailWeathers.map(
       (weatherObj, i) => 
               <tr key={i}>
                 <td>{`${weatherObj.time}`}</td>
@@ -31,14 +31,15 @@ function Expand(props) {
                 <td>{`${weatherObj.feels_like} °C`}</td>
                 <td>{`${weatherObj.temp_min} °C`}</td>
                 <td>{`${weatherObj.temp_max} °C`}</td>
-              </tr>)}
+              </tr>)
+              : {}}
               
             </tbody>
           </table>
           </li>
 
       let currWeatherList = <li></li>;
-      currWeatherList = 
+      currWeatherList = currWeather ?
       <li key={"curr_weather"}>
             <table>
               <thead>
@@ -62,7 +63,8 @@ function Expand(props) {
                 </tr>
               </tbody>
             </table>
-            </li>;
+            </li>
+            : <li></li>;
     return (
         <ul className='detailWeather'>
             <li><button className="expand" onClick={() => handleExpand(id)}>

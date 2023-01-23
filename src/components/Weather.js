@@ -92,11 +92,11 @@ function Weather(props) {
     const [city, setNewCity] = useLocalStorage(id, setTagErrorMsg);
 
     let removeByCity, removeByCountry, removeByTag, disp;
-    removeByCity = city.city.toUpperCase().indexOf(cityFilter) === -1;
-    removeByCountry = city.country.toUpperCase().indexOf(countryFilter) === -1;
-    removeByTag = city.tags.toUpperCase().indexOf(tagFilter) === -1;
+    removeByCity = city.city? city.city.toUpperCase().indexOf(cityFilter) === -1: false;
+    removeByCountry = city.country? city.country.toUpperCase().indexOf(countryFilter) === -1: false;
+    removeByTag = city.tags? city.tags.toUpperCase().indexOf(tagFilter) === -1: false;
 
-    disp = (removeByCity || removeByCountry || removeByTag)? {display:"none"}: {};
+    disp = (removeByCity || removeByCountry || removeByTag || !city.city)? {display:"none"}: {};
 
     return (
         <li className="single_city" style={disp}>

@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`testing Expand component Matches the snapshot: shows empty city 1`] = `
+<ul
+  className="detailWeather"
+>
+  <li>
+    <button
+      className="expand"
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </li>
+  <li />
+</ul>
+`;
+
 exports[`testing Expand component Matches the snapshot: shows expanded Expand component 1`] = `
 <ul
   className="detailWeather"

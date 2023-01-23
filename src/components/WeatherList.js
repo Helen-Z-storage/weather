@@ -1,71 +1,50 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../css/WeatherList.css';
 import Weather from './Weather';
 import Filter from './Filter';
-import weatherList from "../data/weather.json";
 
-const storage = window.localStorage;
-
-class WeatherList extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            cityFilter: "",
-            countryFilter: "",
-            tagFilter: "",
-            groupExpand: new Array(this.props.store_length).fill(false)
-        };
+function WeatherList(props) {
+    const {store_length} = props;
+    const [cityFilter, setCityFilter] = useState("");
+    const [countryFilter, setCountryFilter] = useState("");
+    const [tagFilter, setTagFilter] = useState("");
+    const flags = new Array(store_length).fill(false);
+    const [groupExpand, setGroupExpand] = useState(flags);
+    
+    const handleFilter = (event) => {
+        if (event.target) {
+            if (event.target.id === "cityFilter") {
+                setCityFilter(event.target.value.toUpperCase());
+            }
+            if (event.target.id === "countryFilter") {
+                setCountryFilter(event.target.value.toUpperCase());
+            }
+            if (event.target.id === "tagFilter") {
+                setTagFilter(event.target.value.toUpperCase());
+            }
+            // handle tag's button filter
+            if (event.target.type === "submit") {
+                setTagFilter(event.target.innerHTML.toUpperCase());
+            }
+        }
     }
     
-    handleFilter(event) {
-        // handle name's text filter
-        let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
-        
-        if (event.target.id === "cityFilter") {
-            cityFilter = event.target.value.toUpperCase();
-        }
-        if (event.target.id === "countryFilter") {
-            countryFilter = event.target.value.toUpperCase();
-        }
-        if (event.target.id === "tagFilter") {
-            tagFilter = event.target.value.toUpperCase();
-        }
-        // handle tag's button filter
-        if (event.target.type === "submit") {
-            tagFilter = event.target.innerHTML.toUpperCase();
-        }
-        this.setState({cityFilter, countryFilter, tagFilter, groupExpand});
-    }
-    
-    handleExpand(exp_id) {
-        let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
-        groupExpand[exp_id] = !groupExpand[exp_id] 
-        this.setState({cityFilter, countryFilter, tagFilter, groupExpand});
+    const handleExpand = (exp_id) => {
+        setGroupExpand(groupExpand.map((expand, i) => i === exp_id? !expand: expand));
     }
 
-    render(){
-        // handle whether current student should expand
-        let {cityFilter, countryFilter, tagFilter, groupExpand} = this.state;
+    const cityList = groupExpand.map((expand, i) => {
+        return <Weather key={i} id={i} expand={expand}
+        cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
+        handleExpand={exp_id => handleExpand(exp_id)}
+        handleFilter={(e) => handleFilter(e)} />;
+    })   
 
-        const cityList = groupExpand.map((expand, i) => {
-            return <Weather key={i} id={i} expand={expand}
-            cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
-            handleExpand={exp_id => this.handleExpand(exp_id)}
-            handleFilter={(e) => this.handleFilter(e)} />;
-            /*
-            return <Weather key={i} id={i} weatherList={this.props.weatherList} expand={expand}
-            cityFilter={cityFilter} countryFilter={countryFilter} tagFilter={tagFilter}
-            handleExpand={exp_id => this.handleExpand(exp_id)}
-            handleFilter={(e) => this.handleFilter(e)}
-            setWeatherList={this.props.setWeatherList}/>;
-            */
-        })   
-        
-        return (
+    return (
             <table id="context_box">
                 <tbody>
                     <tr>
-                    <Filter handleFilter={(e) => this.handleFilter(e)}/>
+                    <Filter handleFilter={(e) => handleFilter(e)}/>
                     </tr>
                     <tr>
                         <td>
@@ -74,8 +53,7 @@ class WeatherList extends React.Component{
                     </tr>
                 </tbody>
             </table>
-        );
-    }
+    );
 }
 
 export default WeatherList;

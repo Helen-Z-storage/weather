@@ -19,7 +19,7 @@ const city_filt_two = "U";
 const city_filter = "{Enter}";
 const country_filt_one = "HAN";
 const country_filt_two = "AN";
-const country_filter = "{enter}";
+const country_filter = "{Enter}";
 const tag_filt_one = "M";
 const tag_filt_two = "%";
 const tag_filter = "{Enter}";
@@ -289,7 +289,23 @@ const city_names = city_datas.map(
 const test_nums = city_datas.map(
     _ => 5);
 
+// patching the respective key events in the test suites for legacy code
+// from https://github.com/testing-library/user-event/issues/946
+const keyCodes = {
+    Enter: 13,
+  }
+  function patchKeyEvent(e) {
+    Object.defineProperty(e, 'keyCode', {
+      get: () => keyCodes[e.code] ?? 0,
+    })
+  }
+
 describe('testing WeatherList component', () => {
+
+    beforeAll(() => {
+        document.addEventListener('keyup', patchKeyEvent, {capture: true})
+      })
+
     test("Matches the snapshot", () => {
         // create component
         const city = create(

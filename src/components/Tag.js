@@ -8,8 +8,8 @@ function Tag(props) {
 
 
     // split string tag into a list of valid tags, and remove empty tag
-    var tag_lst = tags.split(tag_spliter).filter(tag => tag !== "")
-                  .map((tag, i) => <button key={i} onClick={e => handleFilter(e)}>{tag}</button>);
+    var tag_lst = tags? tags.split(tag_spliter).filter(tag => tag !== "")
+                  .map((tag, i) => <button key={i} onClick={e => handleFilter(e)}>{tag}</button>): [];
   
     return (
         <ul>

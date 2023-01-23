@@ -34,7 +34,7 @@ const keyCodes = {
       get: () => keyCodes[e.code] ?? 0,
     })
   }
-  
+
 describe('testing Tag component', () => {
 
     beforeAll(() => {
@@ -60,6 +60,16 @@ describe('testing Tag component', () => {
         );
 
         // expecting output
+        expect(tagData.toJSON()).toMatchSnapshot();
+    });
+
+    
+    test("Matches the snapshot with undefined tags", () => {
+        // render component
+        const tagData = create(
+            <Tag tags={undefined} tagErrorMsg={tagErrorMsg} handleFilter={handleFilter}
+                 setNewCity={setNewCity2}/>
+        );
         expect(tagData.toJSON()).toMatchSnapshot();
     });
 

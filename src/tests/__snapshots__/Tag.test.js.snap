@@ -91,3 +91,23 @@ exports[`testing Tag component Matches the snapshot with error message 1`] = `
   </li>
 </ul>
 `;
+
+exports[`testing Tag component Matches the snapshot with undefined tags 1`] = `
+<ul>
+  <li
+    className="tags"
+  />
+  <li
+    className="tagError"
+  >
+    
+  </li>
+  <li>
+    <input
+      onKeyUp={[Function]}
+      placeholder="Add a tag"
+      type="text"
+    />
+  </li>
+</ul>
+`;
